@@ -51,14 +51,16 @@ span.footertext:hover {
   transition: background-position .7s, background-size .5s ease-in-out;
 }
 
-header {
-  position: sticky;
+nav {
+  position: fixed;
+  width: 100%;
   top: 0;
   background-color: black;
 }
 
 footer {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   bottom: 0;
   background-color: black;
 }
