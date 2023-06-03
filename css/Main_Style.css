@@ -51,7 +51,8 @@ span.footertext:hover {
   transition: background-position .7s, background-size .5s ease-in-out;
 }
 
-nav {
+
+header {
   position: fixed;
   width: 100%;
   top: 0;
@@ -60,7 +61,7 @@ nav {
 
 footer {
   position: fixed;
-  width: 100%;
+   width: 100%;
   bottom: 0;
   background-color: black;
 }
