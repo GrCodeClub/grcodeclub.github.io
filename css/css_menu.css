@@ -1,12 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 body {
-  margin: 0;
-  font-family: "Arial";
-  font-size: 1rem;
-  background-image: url("../file/bg.jpg");
+    margin: 0;
+    font-family: "Arial";
+    font-size: 1rem;
+    background-image: url("../file/bg.jpg");
+  }
+  
+ul.up{
+  display: flex;
+  width: 100%;
+  height: 30%;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: space-between;
+  text-align: center;
 }
 
+ul{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    max-width: 1000px;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+li,a {
+  padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  
+  color: white;
+  background-color: black;
+  min-width: 80px;
+  margin: auto;
+}
+
+li:hover,a:hover{
+  background-color: rgb(255, 255, 255);
+  background-size: 100% 100%;
+  color: black;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 span.title {
   font-family: 'Bebas Neue', cursive;
@@ -21,18 +72,20 @@ span.title {
    transition: background-size .7s, background-position .5s ease-in-out;
 }
 
+th {
+	border: 1px solid black;
+}
 
 span.title:hover {
   background-size: 100% 100%;
   background-position: 0% 100%;
-  color: aliceblue;
+  color: red;
   transition: background-position .7s, background-size .5s ease-in-out;
 }
 
 
 h1.title{
   text-align: center;
-  background-color: white;
 }
 
 h1.footertext{
@@ -62,7 +115,6 @@ span.footertext:hover {
 }
 
 
-
 header {
   position: fixed;
   width: 100%;
@@ -77,13 +129,24 @@ footer {
   background-color: black;
 }
 
-table{
-    margin-left: auto;
-  margin-right: auto;
+h3 {
+	display: flex;
+	align-items: baseline;
+	margin: 0 0 1rem;
+	color: black;
 }
 
-th, td {
-	border: 1px solid black;
-	padding: 8px;
-    text-align: center;
+h3::before {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 auto;
+	margin-right: 1rem;
+	width: 3rem;
+	height: 3rem;
+	content: counter(list);
+	padding: 1rem;
+	border-radius: 50%;
+	background-color:black;
+	color: white;
 }
