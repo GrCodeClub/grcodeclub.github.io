@@ -1,0 +1,30 @@
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+/* Menu */
+th.style_menu {
+  padding: 40px;
+}
+
+/* Style 2 */
+table.style2 {
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.noBorder{
+  text-align: left;
+  border-collapse: collapse;
+  background-color: white;
+  border:none;
+  
+}
+tr.style2:hover {
+  background-color: rgb(3, 41, 26); 
+  color: white;
+  font-size: 20px;
+  
+}
