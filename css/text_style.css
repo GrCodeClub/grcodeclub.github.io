@@ -16,3 +16,9 @@ h2.title{
     text-align: center;
     background-color: white;
   }
+
+section.tmp{
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+}
