@@ -1,0 +1,174 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <script src="../../../javascript/clock.js"></script>
+        <link rel="stylesheet" href="../../../css/header_and_footer.css">
+        <link rel="stylesheet" href="../../../css/main_style.css">
+        <link rel="stylesheet" href="../../../css/text_style.css">
+        <link rel="stylesheet" href="../../../css/table.css">
+        <title>GRCODE CLUB</title>
+    </head>
+
+    <body>
+
+    <!-- header --> 
+    <header>
+    <table style="align:center;">
+        <th>
+                <img src="../../../file/logo/logo.png" width="90" height="80"/>
+            </th>
+            <th>
+                <h1 class="header_text">
+                        <span class="header_text"> GrCDOE CLUB </span>
+                </h1>
+               </th>
+               <th> 
+                <h2 style="color: white;">&nbsp &nbsp &nbsp<span id="clock"></span></h2>
+            </th>
+        </tr>
+    </table> 
+    </header>
+    
+    <br><br><br><br><br>
+    <!-- KEIMENO --> 
+    <h2 class="title">
+      <a  href="../../../index.html"> Αρχική Σελίδα </a> /
+      <a  href="../../menu_programming.html"> Γώσσες Προγραμματισμού</a> / 
+      <a  href="./menu_c.html">C</a> /
+      Βασικοί Τύποι Δεδομένων
+    </h2>
+    <br><br>
+  
+    <table class="style2">
+        <caption style="background-color: white;"><h3>Βασικοί Τύποι Δεδομένων</h3></caption>    
+        <tr>
+          <th>Τύπος</th>
+          <th>Περιγραφή</th>
+          <th>Μέγεθος (σε bytes)</th>
+        </tr>
+        <tr class="style2">
+          <td><code>int</code></td>
+          <td>Ακέραιος αριθμός.</td>
+          <td>4</td>
+        </tr>
+        <tr class="style2">
+          <td><code>float</code></td>
+          <td>Αριθμός κινητής υποδιαστολής (μικρής ακρίβειας).</td>
+          <td>4</td>
+        </tr>
+        <tr class="style2">
+          <td><code>double</code></td>
+          <td>Αριθμός κινητής υποδιαστολής (μεγάλης ακρίβειας).</td>
+          <td>8</td>
+        </tr>
+        <tr class="style2">
+          <td><code>char</code></td>
+          <td>Ένας χαρακτήρας.</td>
+          <td>1</td>
+        </tr>
+      </table>
+      <br><br><br>
+      
+      <table class="style2">
+        <caption style="background-color: white;"><h3> Βασικές βιβλιοθήκες </h3></caption>
+        <tr>
+          <th>Βιβλιοθήκη</th>
+          <th>Περιγραφή</th>
+        </tr>
+        <tr class="style2">
+          <td><code>#include &lt;stdio.h&gt;</code></td>
+          <td>Βιβλιοθήκη εισόδου/εξόδου που παρέχει συναρτήσεις όπως <code>printf()</code> και <code>scanf()</code>.</td>
+        </tr>
+        <tr class="style2">
+          <td><code>#include &lt;stdlib.h&gt;</code></td>
+          <td>Βιβλιοθήκη που παρέχει συναρτήσεις για τη διαχείριση μνήμης, δυναμική ανάθεση μνήμης και άλλες γενικές λειτουργίες.</td>
+        </tr>
+        <tr class="style2">
+          <td><code>#include &lt;math.h&gt;</code></td>
+          <td>Βιβλιοθήκη μαθηματικών που παρέχει συναρτήσεις όπως το τετραγωνικό ρίζωμα, η εκθετική συνάρτηση, οι τριγωνομετρικές συναρτήσεις και άλλες.</td>
+        </tr>
+        <tr class="style2">
+          <td><code>#include &lt;string.h&gt;</code></td>
+          <td>Βιβλιοθήκη για λειτουργίες σχετικές με τις συμβολοσειρές, όπως αντιγραφή, συγκατάθεση, σύγκριση και άλλες.</td>
+        </tr>
+        <tr class="style2">
+          <td><code>#include &lt;ctype.h&gt;</code></td>
+          <td>Βιβλιοθήκη για τον έλεγχο και τη μετατροπή χαρακτήρων, όπως οι συναρτήσεις <code>isalpha()</code>, <code>isdigit()</code> και <code>toupper()</code>.</td>
+        </tr>
+        <tr class="style2">
+          <td><code>#include &lt;time.h&gt;</code></td>
+          <td>Βιβλιοθήκη που παρέχει συναρτήσεις για την εργασία με την χρονολογία και την ώρα, όπως η <code>time()</code> και η <code>strftime()</code>.</td>
+        </tr>
+        <tr class="style2">
+          <td><code>#include &lt;stdbool.h&gt;</code></td>
+          <td>Βιβλιοθήκη που παρέχει τον τύπο δεδομένων <code>bool</code> και τις τιμές <code>true</code> και <code>false</code> για λογικές εκφράσεις.</td>
+        </tr>
+      </table>
+      <br>
+
+      <!-- Εντολές if, if-else, else -->
+      <section class="tmp">
+        <h3 style="text-align: center;"> Εντολές if, if-else, else </h3>
+        <br>
+      <p> Οι εντολές if, if-else και else χρησιμοποιούνται για τον έλεγχο μιας συνθήκης και την εκτέλεση διαφορετικών τμημάτων κώδικα ανάλογα με την αποτίμηση της συνθήκης.
+          <br><br>Η σύνταξη των εντολών είναι η εξής:</p><br>
+          <pre>
+            if (condition) {
+            // Κώδικας που εκτελείται αν η συνθήκη είναι αληθής
+            }
+            else {
+            // Κώδικας που εκτελείται αν η συνθήκη είναι ψευδής
+            }
+                 </pre>
+          <p>Με την εντολή `if`, ελέγχεται μια συνθήκη και εάν είναι αληθής, εκτελείται ο κώδικας μέσα στο μπλοκ που ακολουθεί.Αν η συνθήκη είναι ψευδής, ο κώδικας παραλείπεται και συνεχίζεται η εκτέλεση των υπόλοιπων τμημάτων κώδικα.
+          Με την εντολή `if-else`, εκτελείται ένα μπλοκ κώδικα αν η συνθήκη είναι αληθής και ένα διαφορετικό μπλοκ κώδικα αν η συνθήκη είναι ψευδής.
+          Τέλος, η εντολή `else` χρησιμοποιείται για την εκτέλεση ενός μπλοκ κώδικα όταν καμία από τις προηγούμενες συνθήκες δεν είναι αληθείς.</p>              
+        </section>
+       <br><br>
+ <!-- end Εντολές if, if-else, else -->
+
+    <section class="tmp">
+        <h3 style="text-align: center;">Εντολή switch </h3>
+         <br>
+         <p> Η εντολή switch χρησιμοποιείται για τον έλεγχο μιας έκφρασης (expression) και την εκτέλεση διαφορετικών τμημάτων κώδικα ανάλογα με την τιμή της έκφρασης.
+          <br>
+          Η σύνταξη της εντολής switch είναι η εξής:</p>
+          <pre>
+            switch (expression) {
+      case value1:
+        // Κώδικας που εκτελείται αν η έκφραση είναι ίση με την value1
+        break;
+      case value2:
+        // Κώδικας που εκτελείται αν η έκφραση είναι ίση με την value2
+        break;
+      default:
+        // Κώδικας που εκτελείται αν η έκφραση δεν ταιριάζει με καμία από τις προηγούμενες τιμές
+    }
+            </pre>
+            <p>Η εντολή switch ελέγχει την τιμή της έκφρασης και εκτελεί τον κώδικα ανάλογα με την ταιριάζουσα τιμή. Κάθε τιμή ορίζεται με την εντολή case και τον αντίστοιχο κώδικα που θα εκτελεστεί. 
+              Ο τερματισμός του κάθε τμήματος κώδικα γίνεται με την εντολή break.Αν καμία τιμή δεν ταιριάζει, μπορεί να χρησιμοποιηθεί η εντολή default για την εκτέλεση ενός προαιρετικού τμήματος κώδικα.</p>
+</section>
+
+      <!-- Footer -->
+      <br><br><br>
+      <h1  style="font-size:50px;">.</h1>
+        <footer>
+            <table>
+                <tr>
+                   <th>
+                        <a href="https://www.facebook.com/grcode.club/">
+                        <img src="../../../file/logo/fb.png"  width="60" height="60"/>
+                        </a>
+                   </th>
+                   <th>
+                    <a href="https://www.instagram.com/grcode_club/">
+                    <img src="../../../file/logo/insta.png"  width="60" height="60"/>
+                    </a>
+                    </th>
+
+                </tr>
+            </table>        
+        </footer>
+
+            </body>
+</html>

@@ -1,6 +1,5 @@
 a.link_menu {
     padding: 1rem 2rem 1.15rem;
-    text-transform: uppercase;
     color: white;
     background-color: black;
     min-width: 80px;
@@ -21,4 +20,9 @@ section.tmp{
   background-color: white;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+a{
+  text-decoration: none;
+  color: blue;
 }
