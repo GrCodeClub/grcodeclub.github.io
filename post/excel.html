@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.6">
+        <meta property="og:title" content="Έγγραφα">
+        <meta property="og:image" content="https://i.ibb.co/QkHtXVd/post.png"/>
+        <meta property='og:description' content='Excel'>
+        <script src="../javascript/clock.js"></script>
+        <link rel="stylesheet" href="../css/header_and_footer.css">
+        <link rel="stylesheet" href="../css/main_style.css">
+        <link rel="stylesheet" href="../css/text_style.css">
+        <link rel="stylesheet" href="../css/table.css">
+        <title>GRCODE CLUB</title>
+    </head>
+
+    <body>
+
+    <!-- header --> 
+    <header>
+        <table style="align:center;">
+        <th>
+                <img src="../file/logo/logo.png" width="90" height="80"/>
+            </th>
+            <th>
+                <h1 class="header_text">
+                        <span class="header_text"> GrCDOE CLUB </span>
+                </h1>
+               </th>
+               <th> 
+                <h2 style="color: white;">&nbsp &nbsp &nbsp<span id="clock"></span></h2>
+            </th>
+        </tr>
+    </table> 
+    </header>
+    
+    <!-- KEIMENO --> 
+    <br><br><br><br><br>
+    <h2 class="title">
+        <a  href="../index.html"> Αρχική Σελίδα </a> /
+        <a  href="./post_menu.html"> Έγγραφα </a> / 
+        Excel
+      </h2>
+      <br><br>
+    <table class="style2">
+        <tr>     <th>Συνάρτηση</th>     <th>Περιγραφή</th>     <th>Παράδειγμα</th>   </tr>
+          <tr><td colspan="3" ><h1 style="text-align: center">Ημερομηνία</h1></td></tr>
+        <tr class="style2">      
+            <td>DAY(ημερομηνία)</td>    
+             <td> Η συνάρτηση DAY χρησιμοποιείται για να εξαγάγει την ημέρα από μια ημερομηνία</td>     
+            <td>=DAY(23/6/2023)</td>   
+        </tr>
+        <tr class="style2">      
+            <td>DDAYS360(start_date, end_date,[method])</td>    
+             <td>Η συνάρτηση DAYS360 χρησιμοποιείται για να υπολογίσει τον αριθμό των ημερών μεταξύ δύο ημερομηνιών με βάση τη μέθοδο "360 ημέρες έτους". 
+                Αυτή η μέθοδος υπολογισμού θεωρεί ότι κάθε μήνας έχει πάντα 30 ημέρες, ανεξαρτήτως του πραγματικού αριθμού ημερών σε κάθε μήνα.
+                </td>     
+                <td>A1 => 25/3/2023
+                <br> B1 => 25/4/2023
+                <br> C1=DAYS360(A1;B1) <br> C1=30
+                </td>   
+        </tr>
+        <tr><td colspan="3" ><h1 style="text-align: center">Cell</h1></td></tr>
+        <tr class="style2">      
+            <td>=C1&" "&D2</td>    
+             <td>Συνδυάζει τιμές από τα κελιά C1 και D2</td>     
+            <td></td>   
+        </tr>
+        <tr class="style2">      
+            <td>=MID(F2;1;FIND(" ";F2)) <br>  =MID(F2;FIND(" ";F2);LEN(F2))</td>    
+             <td>ΔΙΑΧΩΡΙΣΜΟΣ ΕΝΟΣ ΚΕΛΙΟΥ ΜΕ ΔΥΟ ΛΕΞΕΙΣ (ΟΝΟΜΑΤΕΠΟΝΥΜΟ)</td>     
+            <td>F2 =  ΔΗΜΗΤΡΗΣ ΔΙΟΝΥΣΟΠΟΥΛΟΣ <br>
+                <br>ONOMA <br> =MID(F2;1;FIND(" ";F2)) <br><br>EΠΟΝΥΜΟ <br> =MID(F2;FIND(" ";F2);LEN(F2))
+            </td>   
+        </tr>
+
+        <tr class="style2">      
+            <td>FIND(χαρακτήρας_ή_συμβολοσειρά, κείμενο, [start_num])</td>    
+             <td>Η συνάρτηση FIND χρησιμοποιείται για να βρείτε τη θέση ενός χαρακτήρα ή μιας συμβολοσειράς εντός μιας άλλης συμβολοσειράς.</td>     
+            <td></td>   
+        </tr>
+        
+        <tr class="style2">      
+            <td></td>    
+             <td></td>     
+            <td></td>   
+        </tr>
+        
+        <tr class="style2">      
+            <td></td>    
+             <td></td>     
+            <td></td>   
+        </tr>
+        </table>
+        <br><br> <br><br>
+    <!-- Footer -->
+    <footer>
+     
+        <table style="text-align:center;">
+            <tr>
+               <th>
+                    <a href="https://www.facebook.com/grcode.club/">
+                    <img src="../file/logo/fb.png" class="social"/>
+                    </a>
+               </th>
+               <th>
+                <a href="https://www.instagram.com/grcode_club/">
+                <img src="../file/logo/insta.png" class="social"/>
+                </a>
+                </th>
+
+            </tr>
+        </table>        
+    </footer>
+        </body>
+</html>
