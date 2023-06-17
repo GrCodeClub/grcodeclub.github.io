@@ -41,11 +41,28 @@
       </h2>
       <br><br>
 
-    <table class="style2">
+    <table class="style2" style="margin-left: 3%; margin-right: 3%; margin-bottom: 90px">
+        <caption>Εντολές</caption>
         <tr>   
             <th>Εντολή</th>
             <th>Περιγραφή</th>
         </tr>
+        <tr  class="style2">
+            <td><code> static void main(String[] args)</code></td>
+            <td>Η μέθοδος που εκτελείται κατά την έναρξη του προγράμματος</td>
+        </tr>
+        <tr  class="style2">
+            <td><code>int x = 5;</code></td>
+            <td>Δήλωση μιας μεταβλητής τύπου int με την τιμή 5</td>
+        </tr>
+        <tr  class="style2">
+            <td><code>String name = "John";</code></td>
+            <td>Δήλωση μιας μεταβλητής τύπου String με την τιμή "John"</td>
+        </tr>
+        <tr class="style2">
+            <td><code>import</code></td>
+            <td>Χρησιμοποιείται για την εισαγωγή εξωτερικών κλάσεων ή πακέτων στην κλάση σας</td>
+        </tr> 
         <tr class="style2">
             <td><code>System.out.println("Hello, World!");</code></td>
             <td>Εμφανίζει το κείμενο "Hello, World!" στην κονσόλα.</td>
@@ -68,8 +85,79 @@
                 <code>&nbsp;&nbsp;x--;</code><br>
                 <code>}</code></td>
         <td>Επαναλαμβάνει τον κώδικα μέχρι την εκτέλεση του συνθήκης x > 0, μειώνοντας την τιμή της μεταβλητής x κατά 1 σε κάθε επανάληψη και εμφανίζει την τρέχουσα τιμή της x.</td>
-  </tr>
-</table>
+        </tr>
+        <tr class="style2">
+            <td><code>MyClass myObject = new MyClass();</code></td>
+            <td>Δημιουργία ενός αντικειμένου της κλάσης MyClass</td>
+        </tr>
+        <tr class="style2">
+            <td><code>int result = addNumbers(3, 4);</code></td>
+            <td>Κλήση μιας μεθόδου με ορίσματα και εκχώρηση του αποτελέσματος σε μια μεταβλητή</td>
+        </tr>
+        <tr class="style2">
+            <td><code>int[] numbers = {1, 2, 3, 4, 5};</code></td>
+            <td>Δήλωση και αρχικοποίηση ενός πίνακα ακεραίων</td>
+        </tr>
+        <tr class="style2">
+            <td><code>String[] names = new String[5];</code></td>
+            <td>Δήλωση ενός πίνακα αλφαριθμητικών με δεσμευμένη μνήμη για 5 στοιχεία</td>
+        </tr>
+        <tr class="style2">
+            <td><code>int length = numbers.length;</code></td>
+            <td>Επιστρέφει το μήκος του πίνακα numbers</td>
+        </tr>
+        <tr class="style2">
+            <td><code>numbers[0] = 10;</code></td>
+            <td>Εκχώρηση της τιμής 10 στο πρώτο στοιχείο του πίνακα numbers</td>
+        </tr>
+        <tr class="style2">
+            <td><code>String text = "Hello";</code></td>
+            <td>Δήλωση μιας μεταβλητής τύπου String</td>
+        </tr>
+        <tr class="style2">
+            <td><code>static final</code></td>
+            <td>- Χρησιμοποιείται για τον ορισμό σταθερών τιμών. Μια σταθερά τιμή δεν μπορεί να αλλάξει μετά την αρχικοποίησή της. </td>
+        </tr>
+        <tr class="style2">
+            <td><code>instanceof</code></td>
+            <td>Χρησιμοποιείται για τον έλεγχο του τύπου ενός αντικειμένου. </td>
+        </tr>
+        <tr class="style2">
+            <td><code>hashCode()</code></td>
+            <td>Μέθοδος που χρησιμοποιείται για την ανάκτηση του hash code ενός αντικειμένου. 
+                <br> Παράδειγμα: <br> <cdoe> int hashCode = obj.hashCode();</cdoe>
+            </td>
+        </tr>   
+
+
+        
+        <tr><td colspan="2" ><h1 style="text-align: center; background-color: blue; color: white">Σύγκριση</h1></td></tr>  
+        <tr class="style2">
+            <td><code>equals()</code></td>
+            <td>Μέθοδος που χρησιμοποιείται για τη σύγκριση της ισότητας δύο αντικειμένων.
+                <br> Παράδειγμα: <br> <cdoe> if (obj1.equals(obj2)) { }</cdoe>
+            </td>
+        </tr>   
+        <tr class="style2">
+            <td><code>compareTo()</code></td>
+            <td> Μέθοδος που χρησιμοποιείται για τη σύγκριση της σειράς δύο αντικειμένων.
+                <br> Παράδειγμα: <br> <cdoe> int result = obj1.compareTo(obj2);</cdoe>
+            </td>
+        </tr>
+
+        <tr class="style2">
+            <td><code>compareToIgnoreCase()</code></td>
+            <td> Μέθοδος που χρησιμοποιείται για τη σύγκριση της σειράς δύο αλφαριθμητικών αγνοώντας την πεζή/κεφαλαία γραφή τους.
+                <br> Παράδειγμα: <br> <cdoe>int result = str1.compareToIgnoreCase(str2);</cdoe>
+            </td>
+        </tr>   
+        <tr class="style2">
+            <td><code>compare()</code></td>
+            <td> Μέθοδος που χρησιμοποιείται για τη σύγκριση δύο αντικειμένων βάσει μιας προσαρμοσμένης συνάρτησης σύγκρισης.<br>Συνήθως χρησιμοποιείται σε συνδυασμό με το Comparator interface
+                <br> Παράδειγμα: <br> <cdoe>int result = comparator.compare(obj1, obj2);</cdoe>
+            </td>
+        </tr>     
+ </table>
     
 <!-- Footer -->
 <footer>
