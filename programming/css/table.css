@@ -4,27 +4,6 @@ table {
     margin-right:auto;
 }
 
-h1.one {
-  opacity: 1;
-}
-h1.two {
-  opacity: 0;
-}
-
-table.menu {
-  opacity: 0;
-}
-
-h1.one:hover ~ table.menu,table.menu:hover {
-  opacity: 1;
-}
-
-
-
-
-
-
-
 /* Menu */
 th.style_menu {
   padding: 20px;
