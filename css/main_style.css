@@ -1,14 +1,17 @@
 
 
 body {
-    margin: 0;
-    font-family: "Arial";
-    font-size: 1rem;
-    background-image: url("../file/bg.jpg");
-    background-size: cover;
-    background-position: center;
-
-  }
+  font-family: 'Raleway', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../logo/bg.jpg);
+  font-weight: 300;
+}
 
   /* Custom Scrollbars   */
 

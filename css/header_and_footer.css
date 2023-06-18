@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* header */
-
+table {
+  margin-left:auto; 
+  margin-right:auto;
+}
 header {
   position: fixed;
   width: 100%;
@@ -11,16 +13,16 @@ header {
 
 
 span.header_text {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 50;
+  font-size: 40;
   top: 50%;
   left: 50%;
+  font-size: 40px;
   transform: translate(-50%,-50%);
   background-image: linear-gradient(white, white);
   background-size: 100% 10px;
   background-repeat: no-repeat;
-  background-position: 100% 0%;
-   transition: background-size .7s, background-position .5s ease-in-out;
+  transition: background-size .7s, background-position .5s ease-in-out;
+
 }
 
 span.header_text:hover {
@@ -32,7 +34,7 @@ span.header_text:hover {
 
 h1.header_text{
   text-align: center;
-  font-size: 30;
+  font-size: 10px;
   color: white;
 }
 

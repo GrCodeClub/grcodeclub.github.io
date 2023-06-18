@@ -1,0 +1,114 @@
+
+
+.all {
+  display: flex;
+  perspective: 10px;
+  will-change: perspective;
+  perspective-origin: center center;
+  transition: all 1.3s ease-out;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+
+.all:hover {
+  perspective: 1000px;
+  transition: all 1.3s ease-in;
+  transform: perspective(10000px) rotateX(0deg);
+  .text {
+    opacity: 1;
+  }
+  & > div {
+    opacity: 1;
+    transition-delay: 0s;
+  }
+
+}
+
+
+.website, .code, .network, .system {
+  width: 200px;
+  height: 150px;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  opacity: 0;
+  transition: all .3s ease;
+  transition-delay: 1s;
+  position: relative;
+  background-size: cover;
+  /* background-color: #58d; */
+  cursor: pointer;
+  background-blend-mode: color-burn;
+  
+  &:hover {
+    box-shadow: 0 0 20px 5px rgba(100, 100, 255, .4);
+
+  }
+}
+
+
+.text {
+  transform: translateY(30px) translateX(60px);
+  opacity: 0;
+  transition: all .3s ease;
+  bottom: 0;
+  position: absolute;
+  will-change: transform;
+  color: #fff;
+  font-size: large;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.system {
+  transform: translateX(-300px) translateZ(50px) rotateY(-10deg);
+  background-image: url(../logo/system.png);
+}
+.network {
+  transform: translateX(-300px) translateZ(25px) rotateY(-10deg);
+  background-image: url(../logo/network.jpg);
+}
+.code {
+transform: translateZ(50px) rotateY(-5deg);
+  background-image: url(../logo/code-gdd5bc8488_640.jpg);
+}
+.website {
+  transform: translateX(50px) translateZ(25px) rotateY(5deg);
+  background-image: url(../logo/website.jpg);
+}
+
+.menu{
+    background-image: url(../logo/logo.png);
+    transform: translateX(350px);
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+    transition: all .3s ease;
+    transition-delay: 1s;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-blend-mode: color-burn;
+    opacity: 1;
+}
+
+.menu_text{
+    transform: translateY(35px) translateX(60px);
+    opacity: 1;
+    font-size: 30px;
+    transition: all .3s ease;
+    bottom: 0;
+    position: absolute;
+    will-change: transform;
+    color: #fff;
+    background-color: black;
+    border-radius: 5px;
+}
+
+
