@@ -8,13 +8,13 @@
   transition: all 1.3s ease-out;
   justify-content: center;
   transform-style: preserve-3d;
+ 
 }
 
 
 .all:hover {
   perspective: 1000px;
-  transition: all 1.3s ease-in;
-  transform: perspective(10000px) rotateX(0deg);
+  transform:rotateX(0deg);
   .text {
     opacity: 1;
   }
@@ -27,6 +27,7 @@
 
 
 .website, .code, .network, .system {
+  padding-right: 10px;
   width: 200px;
   height: 150px;
   transform-style: preserve-3d;
@@ -62,25 +63,24 @@
 }
 
 .system {
-  transform: translateX(-300px) translateZ(50px) rotateY(-10deg);
+  transform:  rotateY(-10deg);
   background-image: url(../logo/system.png);
 }
 .network {
-  transform: translateX(-300px) translateZ(25px) rotateY(-10deg);
+  transform: rotateY(-10deg);
   background-image: url(../logo/network.jpg);
 }
 .code {
-transform: translateZ(50px) rotateY(-5deg);
+transform: rotateY(-10deg);
   background-image: url(../logo/code-gdd5bc8488_640.jpg);
 }
 .website {
-  transform: translateX(50px) translateZ(25px) rotateY(5deg);
+  transform:rotateY(-10deg);
   background-image: url(../logo/website.jpg);
 }
 
 .menu{
     background-image: url(../logo/logo.png);
-    transform: translateX(350px);
     background-size: cover;
     width: 200px;
     height: 150px;
@@ -99,7 +99,7 @@ transform: translateZ(50px) rotateY(-5deg);
 }
 
 .menu_text{
-    transform: translateY(35px) translateX(60px);
+    transform: translateY(5vh) translateX(8vh);
     opacity: 1;
     font-size: 30px;
     transition: all .3s ease;
@@ -110,5 +110,4 @@ transform: translateZ(50px) rotateY(-5deg);
     background-color: black;
     border-radius: 5px;
 }
-
 
