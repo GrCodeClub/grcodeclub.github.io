@@ -1,0 +1,41 @@
+section{
+  height: 350px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 140px;
+}
+
+a.menu{
+  background-color: black;
+  border-radius: 15px;
+  letter-spacing: 5px;
+  color: white;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+a.menu:hover{
+  background: white;
+  color: black;
+  box-shadow: 1px 1px 1px 1px blue;
+
+  }
+
+div.menu{
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  transition-duration: 0.2s;
+  padding: 20px;
+
+}
+div.menu:nth-child(odd){
+  transform: perspective(300px) rotateY(40deg);
+}
+div.menu:nth-child(even){
+    transform: perspective(300px) rotateY(-35deg);
+}
+div.menu:hover{
+  transform: rotateY(0);
+}
