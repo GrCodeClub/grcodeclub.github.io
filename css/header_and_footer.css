@@ -42,7 +42,7 @@ span.header_text_desk {
 span.header_text:hover {
   background-size: 100% 100%;
   background-position: 0% 100%;
-  color: black;
+  color: #4e4c51;
   transition: background-position .7s, background-size .5s ease-in-out;
 }
 
