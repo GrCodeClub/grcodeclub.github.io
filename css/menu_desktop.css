@@ -12,15 +12,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-ul.tabs_desktop {
-    /* ... */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* ... */
-  }
+
 .tabs li {
-  margin-top: 20%;  
+  margin-top: 10%;  
 }
 
 .tabs li a {
