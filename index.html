@@ -3,46 +3,60 @@
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
         <meta property="og:image" content="https://i.ibb.co/DzNRfSs/grccode.png"/>
         <script src="./javascript/clock.js"></script>
+        <script src="./javascript/jquery.js"></script>
         <link rel="stylesheet" href="css/header_and_footer.css">
         <link rel="stylesheet" href="css/main_style.css">
         <link rel="stylesheet" href="css/table.css">
-        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/menu_mobile.css">
+        <link rel="stylesheet" href="css/menu_desktop.css">
         <link rel='icon' type='image/png' href='./file/logo/black_logo.png'>
+        
         <title>GRCODE CLUB</title>
     </head>
 
     <body>
+<!-- desktop  -->
+<section class="show_desktop">
+    <script src="./javascript/line.js"></script>
+    <nav class="menu">
+        <ul class="tabs">
+          <li class="active"><a href="#home">Δίκτυα</a></li>
+          <li><a href="#about">Σύστημα</a></li>
+          <li><a href="#contact">Κώδικας</a></li>
 
-    <!-- header --> 
-    <header>
-    <table style="align:center;">
-        <th>
-                <img src="./file/logo/logo.png" width="90" height="80"/>
-            </th>
-            <th>
-                <h1 class="header_text">
-                        <span class="header_text"> GrCDOE CLUB </span>
-                </h1>
-            </th>
-               <th> 
-                <h2 style="color: white;">&nbsp &nbsp &nbsp<span id="clock"></span></h2>
-            </th>
-        </tr>
-    </table> 
-    </header>
-    
-    <!-- MENOY -->
+        </ul>
+        <div class="magic-line"></div>
+      </nav>
+</section>
+ 
+    <!-- mobile -->
+     <section class="show_mobile">
+    <!-- header -->
+        <header  class="mobile">
+            <table>
+                <tr>
+                    <th>
+                        <img src="./file/logo/logo.png" class="logo"/>
+                    </th>
+                    <th>
+                        <h1 class="header_text">
+                                <span class="header_text"> GrCDOE CLUB </span>
+                        </h1>
+                       </th>
+                       <th> 
+                        <h2 style="color: white;">&nbsp &nbsp &nbsp<span id="clock"></span></h2>
+                    </th>
+                </tr>
+            </table>         </header>    
+            <!-- MENOY -->
+     <section class="section_menu">   
+        <div class="menu_mobile"><a href="./network/menu_network.html" class="menu_mobile">Δίκτυα</a></div>
+        <div class="menu_mobile"><a href="./system/system_menu.html" class="menu_mobile"_mobile>Σύστημα</a></div>
+        <div class="menu_mobile"><a href="./programming/menu_programming.html" class="menu_mobile" >Κώδικας</a></div>      </section>
+     </section>
 
-     <section class="element">
-        <div class="menu"><a href="./network/menu_network.html" class="menu">Δίκτυα</a></div>
-        <div class="menu"><a href="./system/system_menu.html" class="menu">Σύστημα</a></div>
-        <div class="menu"><a href="./programming/menu_programming.html" class="menu" >Κώδικας</a></div>
-        <div class="menu"><a href="./post/excel.html" class="menu">Έγγραφα</a></div>
-      </section>
-
-
-      <!-- Footer -->
-        <footer>
+     <!-- Footer -->
+        <footer class="mobile">
             <table style="text-align:center;">
                 <tr>
                    <th>
@@ -60,6 +74,6 @@
             </table>        
 
         </footer>
-
+    </section>
             </body>
 </html>

@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* header */
+/* mobile */
 
-header {
+header.mobile {
   position: fixed;
   width: 100%;
+  max-width: 720px;
   top: 0;
+  margin-right: 900px;
   background-color: black;
 }
 
@@ -35,16 +37,13 @@ h1.header_text{
   color: white;
 }
 
-
-/* footer */
-
-
-footer {
+footer.mobile {
   position: fixed;
   left: 0.5%;
   bottom: 0;
   text-align: center;
   background-color: black;
+  
   }
 
 

@@ -8,19 +8,21 @@ body {
 
 }
 
-/* Στυλ για desktop */
-@media only screen and (min-width: 1280px) {
-  .element {
+@media only screen and (min-width: 720px) {
+  .show_mobile  {
     display: none;
   }
+  .show_desktop   {
+    display: block;}
 }
 
-
 /* Στυλ για κινητές συσκευές */
-@media only screen and (max-width: 1280px) {
-  .element {
+@media only screen and (max-width: 720px) {
+  .show_mobile {
     display: block;
   }
+  .show_desktop   {
+    display: none;}
 }
 
 
@@ -33,9 +35,6 @@ img.logo_2{
   height: 50px;
   width: 50px;
 }
-
-
-
 
 
 
