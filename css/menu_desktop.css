@@ -7,14 +7,14 @@
   padding: 0;
   margin: 0;
   display: flex;
-  border-bottom: 2px solid #00aeef;
-display: flex;
-justify-content: center;
-align-items: center;
+  border-bottom: 5px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tabs li {
-  margin-top: 10%;  
+  margin-top: 10%;
 }
 
 .tabs li a {
@@ -29,16 +29,16 @@ align-items: center;
   position: absolute;
   bottom: -2px;
   left: 0;
-  height: 5px;
-  background-color: #00aeef;
+  height: px;
+  background-color: #000000;
   transition: all 0.3s ease;
+  border-radius: 10px;
 }
 
 .tabs li.active a {
   font-weight: bold;
   
 }
-
 
 .tabs li:hover .magic-line,
 .tabs li.active .magic-line {
