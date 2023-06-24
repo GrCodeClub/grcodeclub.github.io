@@ -1,41 +1,39 @@
-section{
-  height: 350px;
-  width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 140px;
-}
 
-a.menu{
-  background-color: black;
-  border-radius: 15px;
-  letter-spacing: 5px;
-  color: white;
-  font-size: 50px;
-  text-decoration: none;
-}
-
-a.menu:hover{
-  background: white;
-  color: black;
-  box-shadow: 1px 1px 1px 1px blue;
-
+@media (min-width: 720px) {
+  .tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-div.menu{
+}
+@media (max-width: 720px) {
+  .tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}
+a:hover{
+  background-color: blue;
   border-radius: 10px;
-  width: 200px;
-  height: 40px;
-  transition-duration: 0.2s;
-  padding: 20px;
+}
 
+
+.tabs li {
+  margin-top: 10%;
 }
-div.menu:nth-child(odd){
-  transform: perspective(300px) rotateY(40deg);
+
+.tabs li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 40px;
+  margin-left:20px;
 }
-div.menu:nth-child(even){
-    transform: perspective(300px) rotateY(-35deg);
-}
-div.menu:hover{
-  transform: rotateY(0);
-}
+
+
