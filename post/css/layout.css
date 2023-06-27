@@ -1,0 +1,27 @@
+.container {  
+    display: grid;
+    grid-template-areas:
+    "Header"
+    "Text" ;
+    }  
+  
+.Header { 
+    grid-area: Header; 
+    background-color: rgba(0, 0, 0, 0.900);
+}
+  
+div.text_bg{
+  background-color: rgba(0, 0, 0, 0.445);
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Text { 
+    grid-area: Text;  
+    color: white;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+  
