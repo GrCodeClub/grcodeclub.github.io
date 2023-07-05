@@ -8,7 +8,21 @@
     justify-content: center;
     align-items: center;
   }
+  .social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  img.social{
+    width: 70px;
+  }
 }
+
 @media (max-width: 720px) {
   .tabs {
     list-style: none;
@@ -18,9 +32,26 @@
     justify-content: center;
     align-items: center;
   }
+  .social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  img.social{
+    width: 70px;
+  }
 }
-a:hover{
-  background-color: blue;
+
+
+a.menu:hover{
+  border-radius: 10px;
+}
+
+a.notbg:hover{
   border-radius: 10px;
 }
 
