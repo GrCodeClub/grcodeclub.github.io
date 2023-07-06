@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background-size: cover;
+}
+
+img.social{
+  width: 60px;
+  height: 60px;
+}
+
+
+@media only screen and (min-width: 720px) {
+  .no_show_mobile  {
+    display: block;
+  }
+
+}
+
+/* Στυλ για κινητές συσκευές */
+@media only screen and (max-width: 720px) {
+  .no_show_mobile {
+    display: none;
+  }
+
+}
+
+div.text_bg{
+  background-color: rgba(0, 0, 0, 0.63);
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 70px;
+}
+
+img.logo{
+  width:100px;
+  height:110px;
+}
+
+img.logo_2{
+  height: 50px;
+  width: 50px;
+}
+
+
