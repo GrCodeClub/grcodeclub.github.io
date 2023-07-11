@@ -1,6 +1,8 @@
 body {
   margin: 0;
   background-size: cover;
+    background-attachment: fixed; /* Κάνει την εικόνα σταθερή */
+  background-repeat: no-repeat; /* Αποτρέπει την επανάληψη της εικόνας */
 }
 
 img.social{
