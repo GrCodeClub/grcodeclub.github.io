@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  height: 100vh;
+}
+
+
+img.logo{
+  width:100px;
+  height:110px;
+}
+
+
+a.menu:hover{
+  background-color: blue;
+  border-width: 10px;
+}
+
+img.social{
+  width: 100px;
+}
