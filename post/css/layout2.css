@@ -1,0 +1,29 @@
+.container {  
+  display: grid;
+  grid-template-rows: 90px 100%;
+  grid-template-columns: 100%;
+  grid-template-areas:
+  "Header"
+  "Text" ;
+  }  
+
+
+.Header { 
+  position: fixed;
+  width: 100%;
+  grid-area: Header; 
+  background-color: rgba(0, 0, 0, 0.900);
+}
+
+.Menu { 
+  position: fixed;
+  grid-area: Menu; 
+  background-color: rgba(0, 0, 0, 0.900);
+  height: 100%;
+  margin-top: 90px;
+}
+
+.Text { 
+  grid-area: Text;  
+  color: white;
+}
