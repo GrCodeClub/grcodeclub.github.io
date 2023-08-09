@@ -1,39 +1,72 @@
-<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta property="og:image" content="https://i.ibb.co/Dw600xC/1.png"/>
+        <meta property="og:title" content="Το χρωματικό Μοντέλο RGB">
+        <script src="../javascript/jquery.js"></script>
+        <link rel="stylesheet" href="../css/header_and_footer.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/text.css">
+        <link rel="stylesheet" href="../css/table.css">
+        <link rel="stylesheet" href="../css/layout.css">
+        <script src="../javascript/add_menu_list.js"></script>
+        <link rel='icon' type='image/png' href='../file/logo/black_logo.png'>
+        <title>GRCODE CLUB</title>
+    </head>
 
-<html> 
 
- <head> 
-  <meta name="viewport" content="width=device-width, initial-scale=0.5">
-  <meta property="og:image" content="https://i.ibb.co/Dw600xC/1.png"/>
-  <meta property="og:title" content="Το χρωματικό Μοντέλο RGB">
-  <link rel='icon' type='image/png' href='./file/logo/black_logo.png'>
-  <meta charset="UTF-8"> 
-  <link rel="stylesheet" href="../css/main.css"> 
-  <link rel="stylesheet" href="../css/header_and_footer.css">
-  <link rel="stylesheet" href="../css/table.css">
-  <link rel="stylesheet" href="../css/layout.css">
- </head> 
+    <body style="background-image: url('../file/bg/RGB.jpg');"> 
 
- <body style="background-image: url('../file/bg-logo/RGB.jpg');"> 
-        <div class="Header">
+
+    <div class="container">
+        <section class="show_desktop"> <!--ΑΡΧΗ show_desktop-->
+            <div class="Header"> <!--ΑΡΧΗ Header show_desktop-->
                 <table>
                     <tr>
-                        <td>
-                            <img src="../file/logo/logo.png" class="logo"/>
-                        </td>
-                        <td>
-                            <h1 class="header_text">
-                                <span class="header_text color_red"> GrCDOE CLUB </span>
-                            </h1>
-                           </td>
-                          <td style="padding-left: 30px;">
-                            <a href="https://grcodeclub.github.io/site.github.io/"> <img src="../file/bg-logo/home.png" class="logo_2"/></a>
-                          </td> 
+                        <td><img src="../../file/logo/logo.png" class="logo"/></td>
+                        <td><h1 class="header_text"><span class="header_text"> GrCDOE CLUB </span></h1></td>
                     </tr>
-                </table>   
-                </div>
+                </table> 
+            </div> <!--ΤΕΛΟΣ Header show_desktop-->
+            <div class="Menu"> <!--ΑΡΧΗ Menu show_desktop-->
+                <div id="sidebarMenu" style=" overflow: auto;">
+                    <ul class="sidebarMenuInner">
+                    </ul>
+                  </div><!--Menu end-->
+            </div><!--ΤΕΛΟΣ Menu show_desktop-->
+        </section> <!--ΤΕΛΟΣ show_desktop-->
 
-                <div class="Text">
+        <section class="show_mobile">  <!--ΑΡΧΗ show_mobile-->
+            <div class="Header"> <!--ΑΡΧΗ Header show_mobile-->
+                <table>
+                    <tr>
+                        <td><img src="../../file/logo/logo.png" class="logo"/></td>
+                        <td><h1 class="header_text"><span class="header_text"> GrCDOE CLUB </span></h1></td>
+                        <td><h2 style="color: white;">&nbsp &nbsp &nbsp<span id="clock"></span></h2></td>
+                    </tr>
+                </table> 
+            </div> <!--ΤΕΛΟΣ Header show_mobile-->
+            <table>  <!--ΑΡΧΗ Menu show_mobile-->
+                <tr>
+                    <td>
+                        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                        <label for="openSidebarMenu" class="sidebarIconToggle">
+                          <div class="spinner diagonal part-1"></div>
+                          <div class="spinner horizontal"></div>
+                          <div class="spinner diagonal part-2"></div>
+                        </label>
+                        <div id="sidebarMenu" style="  overflow: auto;">
+                            <ul class="sidebarMenuInner"></ul>
+
+                        </div><!--Menu end-->
+                        </td>
+                    </tr>
+            </table> <!--ΤΕΛΟΣ Menu show_mobile-->
+        </section> <!--ΤΕΛΟΣ show_mobile-->
+
+
+        <div class="Text"> <!--ΑΡΧΗ Text-->
+            <div class="Text">
                 <div class="text_bg">
                         <h1 style="font-size: 50px; color: white; text-align:center;  background-color: rgba(12, 81, 228, 0.494);
                         border-top-left-radius: 10px; border-top-right-radius: 10px">Το χρωματικό Μοντέλο RGB </h1>
@@ -399,23 +432,26 @@
                 </div>
                 </div>
             </div>
+        </div> <!--ΤΕΛΟΣ Text-->
 
-            <footer>
-                <table style="text-align:center;">
-                    <tr>
-                       <td>
-                            <a href="https://www.facebook.com/grcode.club/">
-                            <img src="../file/logo/fb.png" class="social"/>
-                            </a>
-                       </td>
-                       <td>
-                        <a href="https://www.instagram.com/grcode_club/">
-                        <img src="../file/logo/insta.png"  class="social"/>
+    </div> <!--ΤΕΛΟΣ container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table style="text-align:center;">
+                <tr>
+                   <td>
+                        <a href="https://www.facebook.com/grcode.club/">
+                        <img src="../file/logo/fb.png" class="social"/>
                         </a>
-                        </td>
-                    </tr>
-                </table>        
-
- </body>
-
+                   </td>
+                   <td>
+                    <a href="https://www.instagram.com/grcode_club/">
+                    <img src="../file/logo/insta.png"  class="social"/>
+                    </a>
+                    </td>
+                </tr>
+            </table>        
+        </footer>
+    </body>
 </html>

@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./css/text.css">
         <link rel="stylesheet" href="./css/table.css">
         <link rel="stylesheet" href="./css/layout.css">
+        <link rel="stylesheet" href="./css/list.css">
         <script src="./javascript/add_menu_list.js"></script>
         <link rel='icon' type='image/png' href='./file/logo/black_logo.png'>
         <title>GRCODE CLUB</title>
@@ -67,9 +68,23 @@
 
 
         <div class="Text"> <!--ΑΡΧΗ Text-->
-            <div class="text_bg">
-                <h1 style="text-align:center; background-color: rgb(22, 4, 85); border-top-left-radius: 10px; border-top-right-radius: 10px;">Δημοσιεύσεις</h1>
+            <div class="Text_bg">
+                <h1 style="text-align:center; background-color: blue; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    Δημοσιεύσεις
+                </h1>
+                <div  style="background-color: rgba(11, 65, 214, 0.521); border-radius: 10px; text-align: center; margin:20px 100px 30px 100px">
+                  <input type="input" class="form__field" placeholder="Αναζήτηση" id='searchInput'/>
+              </div>
+                 
+                <div class="list-container">
+                    <ul class="list">
+                      <li><a href="./image/color_RGB.html" class="link_menu">Το χρωματικό Μοντέλο RGB</a></li>
+                    </ul>
+    
+                  </div>
+                  <script src="./javascript/search_list.js"></script>
             </div>
+   
         </div> <!--ΤΕΛΟΣ Text-->
 
     </div> <!--ΤΕΛΟΣ container-->
@@ -93,3 +108,4 @@
         </footer>
     </body>
 </html>
+
