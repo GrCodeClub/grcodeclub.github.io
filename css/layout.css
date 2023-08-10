@@ -7,20 +7,15 @@
     "Header"
     "Text" ;
     min-height: 90vh;
-
-    }  
-  
-  
+}  
+    
 .Header { 
     z-index: 1000;
     grid-area: Header; 
 }
 
-
 .Text { 
     grid-area: Text;  
     color: white;
-
- 
+    margin-top: 4%;
 }
-  
