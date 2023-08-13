@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta property="og:image" content="https://grcodeclub.github.io/file/background/linux.png"/>
+        <meta property="og:title" content="Linux | Σύστημα Αρχείων">
+        <script src="https://grcodeclub.github.io/javascript/jquery.js"></script>
+        <script src="https://grcodeclub.github.io/system/javascript/menu.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <title> GrCode Club</title>
+    </head>
+
+
+    <body>
+
+    <div class="container">
+        <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
+            <div class="Header"> <!--Αρχή Επικεφαλίδας-->
+                <table>
+                    <tr>
+                        <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                        <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                        <td><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/system/main.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
+                    </tr>
+                </table> 
+            </div> <!--Τέλος Επικεφαλίδας-->
+           
+            <div class="Menu"> <!--Αρχή Menu-->
+                <div id="sidebarMenu" style="  overflow: auto;">
+                    <ul class="sidebarMenuInner">
+                    </ul>
+                  </div>
+            </div><!--Τέλος Menu-->
+
+        </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
+
+        <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
+            <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
+                <table>
+                    <tr>
+                        <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                        <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                    </tr>
+                </table> 
+            </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
+            <table>  <!--Αρχή Menu σε κινητά-->
+                <tr>
+                    <td>
+                        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                        <label for="openSidebarMenu" class="sidebarIconToggle">
+                          <div class="spinner diagonal part-1"></div>
+                          <div class="spinner horizontal"></div>
+                          <div class="spinner diagonal part-2"></div>
+                        </label>
+                        <div id="sidebarMenu" style="overflow: auto;">
+                          <ul class="sidebarMenuInner">
+                          </ul>
+                        </div>
+                        </td>
+                    </tr>
+            </table> <!--Τέλος Menu σε κινητά-->
+        </section> <!--Τέλος εμφάνιση σε κινητά-->
+
+
+        <div class="Text"> <!--Αρχή Κειμένου-->
+            <a href="../linux.html"><img src="https://grcodeclub.github.io/file/logo_and_graphic/back.png" class="logo_back"></a>
+            <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
+               <h1 class="title"> Σύστημα Αρχείων</h1>
+               <h1>/ (κατάλογος-ρίζα)</h1>
+               <p>Σε αυτόν περιέχονται όλοι οι υπόλοιποι κατάλογοι και είναι το ισοδύναμο του C:\ των Windows.</p>
+               <hr>
+               <h1>/home</h1>
+               <p>Ο φάκελος /home περιέχει τους προσωπικούς φακέλους των χρηστών. Κάθε χρήστης στο σύστημα έχει έναν ξεχωριστό φάκελο με το όνομά του μέσα στον φάκελο /home.
+                <br> <br>
+                Ο φάκελος /home προορίζεται για την αποθήκευση των προσωπικών αρχείων και των ρυθμίσεων κάθε χρήστη. Συνήθως, αυτός ο φάκελος περιλαμβάνει υποφακέλους για τα έγγραφα, τις εικόνες, τα μουσικά αρχεία, τα αρχεία καταγραφής (logs) και άλλες κατηγορίες αρχείων που αφορούν τον κάθε χρήστη.
+                <br> <br>
+                Κάθε χρήστης έχει πλήρη δικαιώματα πρόσβασης στον προσωπικό του φάκελο, και αυτός είναι ο προεπιλεγμένος κατάλογος όταν ο χρήστης συνδέεται στο σύστημα. Οι χρήστες μπορούν να αποθηκεύουν, να τροποποιούν και να διαγράφουν αρχεία μέσα στον προσωπικό τους φάκελο, χωρίς να επηρεάζουν τα αρχεία των άλλων χρηστών.
+                <br> <br>
+                Ο φάκελος /home είναι σημαντικός για την οργάνωση και τη διαχείριση των χρηστών σε ένα Linux σύστημα. Αποτελεί έναν κεντρικό σημείο αποθήκευσης για τα προσωπικά δεδομένα των χρηστών και επιτρέπει την ευκολότερη διαχείριση και αντιγραφή αρχείων μεταξύ χρηστών και συστήματος.</p>
+               <hr>
+               <h1>/boot</h1>
+               <p>Ο φάκελος /boot περιέχει τα αρχεία που απαιτούνται για την εκκίνηση του συστήματος.  Αυτό περιλαμβάνει τον πυρήνα του Linux, τα αρχεία παραμετροποίησης του bootloader (όπως το GRUB), τα αρχεία εκκίνησης (initramfs ή initrd) και άλλα αρχεία που αφορούν τη διαδικασία εκκίνησης του συστήματος.</p>
+               <hr>
+               <h1>/bin</h1>
+               <p>
+                Ο φάκελος /bin περιέχει τις βασικές εκτελέσιμες εντολές (εκτελέσιμα προγράμματα) που είναι απαραίτητες για τη λειτουργία του συστήματος και για τη διαχείριση του από τους χρήστες.
+                <br><br>
+                Ο φάκελος /bin και ο φάκελος /usr/bin αποτελούν σημαντικά μέρη του συστήματος αρχείων του Linux, καθώς περιέχουν τις βασικές εργαλειοθήκες που χρησιμοποιούνται για τη διαχείριση του συστήματος και των αρχείων από τους χρήστες.
+              </p>
+               <hr>
+               <h1>/dev</h1>
+               <p>Ο φάκελος /dev περιέχει τα αρχεία συσκευών (device files) που αναπαριστούν φυσικές ή εικονικές συσκευές που 
+                χρησιμοποιούνται από το σύστημα και τις εφαρμογές.
+                <br><br>
+                Οι συσκευές στο Linux αντιμετωπίζονται ως αρχεία, και τα αντίστοιχα αρχεία συσκευής που αναπαριστούν τις συσκευές βρίσκονται στον φάκελο /dev. 
+               </p>
+               <hr>
+               <h1>/etc</h1>
+               <p>Ο φάκελος /etc περιέχει τα αρχεία ρυθμίσεων (configuration files) για το σύστημα και τις εφαρμογές που είναι εγκατεστημένες σε αυτό.
+                <br><br>
+                Ο φάκελος /etc περιέχει αρχεία που προσδιορίζουν τη συμπεριφορά και τις ρυθμίσεις για διάφορα συστήματα και υπηρεσίες. Αυτά τα αρχεία μπορούν να περιλαμβάνουν παραμέτρους ρύθμισης, κανόνες ασφαλείας, διαμόρφωση δικτύου, παραμέτρους χρηστών, προεπιλεγμένες ρυθμίσεις εφαρμογών και άλλα.    
+                </p>
+               <ul style="list-style-type: none;">
+                <li> <b style="font-size: 25px;">/etc/passwd</b>   &emsp; Αρχείο που περιέχει πληροφορίες για τους χρήστες του συστήματος. </li>
+                <li> <b style="font-size: 25px;">/etc/group</b>   &emsp;  Αρχείο που περιέχει πληροφορίες για τις ομάδες χρηστών.</li>
+                <li> <b style="font-size: 25px;">/etc/network/interfaces</b>   &emsp; Αρχείο που ορίζει τις ρυθμίσεις δικτύου του συστήματος.</li>
+                <li> <b style="font-size: 25px;">/etc/resolv.conf</b>   &emsp;  Αρχείο που καθορίζει τις ρυθμίσεις DNS του συστήματος.</li>
+                <li> <b style="font-size: 25px;">/etc/apt/sources.list</b>   &emsp; Αρχείο που περιέχει τις πηγές λογισμικού (repositories) για το σύστημα διαχείρισης πακέτων APT.</li>
+                <li> <b style="font-size: 25px;">/etc/apache2/apache2.conf</b>   &emsp; Αρχείο ρυθμίσεων για τον διακομιστή Apache HTTP.</li>
+                <li> <b style="font-size: 25px;">/etc/fstab</b>   &emsp; Αρχείο που καθορίζει τις συσκευές που πρέπει να προσαρτηθούν κατά την εκκίνηση του συστήματος.</li>
+                <li> <b style="font-size: 25px;">/etc/hosts</b>   &emsp; Αρχείο που περιέχει τοπικές καταχωρήσεις για τα ονόματα των υπολογιστών και τις αντίστοιχες διευθύνσεις IP.</li>
+                <li> <b style="font-size: 25px;">/etc/shadow</b>   &emsp; Αρχείο που περιέχει κρυπτογραφημένες κωδικούς πρόσβασης των χρηστών.</li>
+                <li> <b style="font-size: 25px;">/etc/crontab</b>   &emsp;  Αρχείο που περιέχει χρονοπρογραμματισμένες εργασίες (cron jobs).</li>
+                <li> <b style="font-size: 25px;">/etc/sudoers</b>   &emsp;  Αρχείο που καθορίζει τους χρήστες και τις ομάδες που έχουν δικαίωμα να εκτελούν εντολές με δικαιώματα διαχειριστή.</li>
+               </ul>
+               <hr>
+               <h1>/lib</h1>
+               <p>Ο φάκελος /lib περιέχει τις βιβλιοθήκες (libraries) που χρησιμοποιούνται από το σύστημα και τις εφαρμογές για την εκτέλεση κώδικα.</p>
+               <hr>
+               <h1>/mnt</h1>
+               <p>Ο φάκελος /mnt αποτελεί ένα σημείο αποθήκευσης για προσωρινή προσάρτηση εξωτερικών συσκευών αρχείων στο σύστημα και περιέχει υποφακέλους με ονόματα που αντιστοιχούν στις συσκευές που προσαρτώνται.
+               </p>
+               <hr>
+               <h1>/opt</h1>
+               <p>Ο φάκελος /opt χρησιμοποιείται για την εγκατάσταση εφαρμογών που δεν είναι μέρος της κανονικής δομής αρχείων του συστήματος Συνήθως, αυτές οι εφαρμογές είναι αυτόνομες, προστατευμένες από την κανονική δομή των αρχείων και μπορεί να έχουν δικά τους υποφακέλους και βιβλιοθήκες.</p>
+               <hr>
+               <h1>/proc</h1>
+               <p>Ο φάκελος /proc παρέχει πληροφορίες σχετικά με την τρέχουσα κατάσταση του συστήματος, τις εργασίες που εκτελούνται και πληροφορίες για τις συσκευές.</p>
+               <hr>
+               <h1>/sbin</h1>
+               <p>Ο φάκελος /sbin περιέχει εκτελέσιμα αρχεία (executables) που χρησιμοποιούνται από το σύστημα για τη διαχείριση και τη συντήρηση του συστήματος.
+                  <br><br>
+                  Ορισμένα από τα εκτελέσιμα αρχεία που μπορεί να βρείτε στον φάκελο /sbin περιλαμβάνουν:
+                  <ul style="list-style-type: none;">
+                    <li> <b style="font-size: 25px;">/sbin/reboot</b>&emsp; Εκτέλεση επανεκκίνησης του συστήματος.</li>
+                    <li> <b style="font-size: 25px;">/sbin/shutdown</b>&emsp; Εκτέλεση απενεργοποίησης του συστήματος.</li>
+                    <li> <b style="font-size: 25px;">/sbin/ifconfig</b>&emsp; Ρύθμιση και διαχείριση των δικτυακών διεπαφών.</li>
+                    <li> <b style="font-size: 25px;">/sbin/fsck</b>&emsp; Εκτέλεση ελέγχου συστήματος αρχείων και επιδιόρθωση προβλημάτων.</li>
+                    <li> <b style="font-size: 25px;">/sbin/mount</b>&emsp; Προσάρτηση αρχείων συστήματος αρχείων σε συγκεκριμένες τοποθεσίες.</li>
+                    <li> <b style="font-size: 25px;">/sbin/dhclient</b>&emsp; Δυναμική ανάθεση διευθύνσεων IP μέσω του πρωτοκόλλου DHCP.</li>
+                    <li> <b style="font-size: 25px;">/sbin/sysctl</b>&emsp; Ρύθμιση και διαχείριση παραμέτρων πυρήνα του συστήματος.</li>
+                  </ul>  
+                </p>
+               <hr>
+               <h1>/usr</h1>
+               <p>
+                Ο φάκελος /usr περιέχει τα περισσότερα αρχεία και φακέλους που αφορούν το λειτουργικό σύστημα και τις εφαρμογές που εγκαθίστανται σε αυτό.
+                <br><br>
+                Μέσα στον φάκελο /usr θα βρείτε υποφακέλους που συνήθως περιλαμβάνουν:
+                <ul style="list-style-type: none;">
+                  <li> <b style="font-size: 25px;">/usr/bin</b>&emsp;Εκτελέσιμα αρχεία που ανήκουν στις εγκατεστημένες εφαρμογές για τους κανονικούς χρήστες.</li>
+                  <li> <b style="font-size: 25px;">/usr/lib</b>&emsp;Βιβλιοθήκες που χρησιμοποιούνται από τις εφαρμογές.</li>
+                  <li> <b style="font-size: 25px;">/usr/include</b>&emsp;Αρχεία κεφαλίδων (header files) που περιέχουν δηλώσεις και πρωτότυπα συναρτήσεων για την ανάπτυξη εφαρμογών.</li>
+                  <li> <b style="font-size: 25px;">/usr/share</b>&emsp;Αρχεία δεδομένων που χρησιμοποιούνται από τις εφαρμογές, όπως γραφικά, εικόνες, ήχους και εγχειρίδια.</li>
+                  <li> <b style="font-size: 25px;">/usr/sbin</b>&emsp;Εκτελέσιμα αρχεία που ανήκουν στις εγκατεστημένες εφαρμογές για τον διαχειριστή (root).</li>
+                  <li> <b style="font-size: 25px;">/usr/local</b>&emsp; Εγκατεστημένα προγράμματα και πόροι που προέρχονται από τοπικές εγκαταστάσεις ή προσαρμοσμένες εγκαταστάσεις.</li>
+                  <li> <b style="font-size: 25px;">/usr/share/man</b>&emsp;Εγχειρίδια (man pages) για τις εγκατεστημένες εφαρμογές και εργαλεία.</li>
+                </ul>
+               </p>
+               <hr>
+               <h1>/var</h1>
+               <p>
+                Ο φάκελος /var (που προέρχεται από το "variable") περιέχει μεταβαλλόμενα δεδομένα που αλλάζουν κατά τη διάρκεια της λειτουργίας του συστήματος.
+                <br><br>
+                Ο φάκελος περιέχει δεδομένα που είναι πιθανό να αλλάξουν κατά τη διάρκεια της χρήσης του συστήματος, όπως:
+                <ul style="list-style-type: none;">
+                  <li> <b style="font-size: 25px;">/var/log</b>&emsp;Αρχεία καταγραφής (log files) για διάφορες εφαρμογές και υπηρεσίες του συστήματος.</li>
+                  <li> <b style="font-size: 25px;">/var/spool</b>&emsp;Αρχεία σειράς αναμονής για εφαρμογές που απαιτούν σειριακή επεξεργασία ή παράδοση δεδομένων, όπως ταχυδρομικά κιβώτια (mailboxes) ή εκτυπωτές.</li>
+                  <li> <b style="font-size: 25px;">/var/cache</b>&emsp;Αρχεία προσωρινής αποθήκευσης για εφαρμογές, όπως ο προσωρινός φάκελος περιήγησης (browser cache).</li>
+                  <li> <b style="font-size: 25px;">/var/www</b>&emsp;Αρχεία και φάκελοι που αντιστοιχούν στην ιστοσελίδα (web page) του διακομιστή (server) HTTP</li>
+                  <li> <b style="font-size: 25px;">/var/lib</b>&emsp;Αρχεία βάσεων δεδομένων και άλλα δεδομένα για εφαρμογές, όπως οι βάσεις δεδομένων του συστήματος διαχείρισης βάσεων δεδομένων (database management system).</li>
+                  <li> <b style="font-size: 25px;">/var/tmp</b>&emsp; Αρχεία προσωρινής αποθήκευσης που επιβιώνουν από τον επανεκκίνηση του συστήματος.</li>
+                </ul>  
+               </p>
+            </div><!-- Τέλος Background Κειμένου-->
+        </div> <!--Τέλος Κειμένου-->
+
+    </div> <!--Τέλος container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/javascript/footer.js"></script>       
+        </footer>
+    </body>
+</html>
