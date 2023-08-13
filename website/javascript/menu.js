@@ -8,10 +8,10 @@ $(document).ready(function() {
     menuLink = ' <li><a href="#">Php</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-        menuLink = ' <li><a href="#">JavaScript</a></li>';
+    menuLink = ' <li><a href="#">JavaScript</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = ' <li><a href="#">Γλώσσες Προγραμματισμού</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.github.io/programming/main.html">Γλώσσες Προγραμματισμού</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     menuLink = ' <li><a href="https://grcodeclub.github.io">GrCode Club</a></li>';
