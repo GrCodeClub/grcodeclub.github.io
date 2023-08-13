@@ -6,16 +6,16 @@ $(document).ready(function() {
     menuLink = '<li><a href="#">Έγγραφα </a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="#">C</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/programming/c.html">C</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="#">C++</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/programming/c++.html">C++</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="#">Java</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/programming/java.html">Java</a></li>';
      $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="#">Python</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/programming/python.html">Python</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     
