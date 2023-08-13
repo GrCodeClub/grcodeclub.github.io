@@ -25,7 +25,7 @@
                     <tr>
                         <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
                         <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
-                        <td><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/system/main.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
+                        <td><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/system/linux/network.cmd" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
                     </tr>
                 </table> 
             </div> <!--Τέλος Επικεφαλίδας-->
@@ -79,11 +79,11 @@
                       <th>Περιγραφή</th>
                     </tr>
                     <tr>
-                      <td><a href="./network_cmd/ifconfig_cmd.html" class="link_menu">ifconfig</a></td>
+                      <td>ifconfig</td>
                       <td>Εμφανίζει τις πληροφορίες δικτύου για τις διεπαφές δικτύου.</td>
                     </tr>
                     <tr>
-                      <td><a href="./network_cmd/ip_cmd.html" class="link_menu">ip</a></td>
+                      <td>ip</td>
                       <td>Παρέχει εργαλεία για την ρύθμιση των δικτυακών παραμέτρων, όπως διευθύνσεις IP, πύλες, δρομολόγηση και άλλες δικτυακές ρυθμίσεις.</td>
                     </tr>
                     <tr>
