@@ -19,7 +19,7 @@ $(document).ready(function() {
     $('.sidebarMenuInner').append(menuLink);
 
     
-    menuLink = '<li><a href="#">Website</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/website/main.html">Website</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
     
