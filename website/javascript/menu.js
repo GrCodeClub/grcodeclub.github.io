@@ -1,14 +1,14 @@
 $(document).ready(function() {
-    var menuLink = ' <li><a href="#">Ιστοσελίδες</a></li>';
+    var menuLink = ' <li><a href="https://grcodeclub.github.io/website/main.html">Ιστοσελίδες</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = ' <li><a href="#">CSS - Html</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.github.io/website/html-css.html">CSS - Html</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = ' <li><a href="#">Php</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.github.io/website/php.html">Php</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = ' <li><a href="#">JavaScript</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.github.io/website/javascript.html">JavaScript</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     menuLink = ' <li><a href="https://grcodeclub.github.io/programming/main.html">Γλώσσες Προγραμματισμού</a></li>';
