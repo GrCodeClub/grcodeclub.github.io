@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Arial";
-  background-image: url("../file/bg.jpg");
+  background-image: url("https://grcodeclub.github.io/file/background/1.jpg");
   background-size: cover;
   background-attachment: fixed; /* Κάνει την εικόνα σταθερή */
   background-repeat: no-repeat; /* Αποτρέπει την επανάληψη της εικόνας */
