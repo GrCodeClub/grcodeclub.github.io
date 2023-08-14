@@ -7,6 +7,8 @@ $(document).ready(function() {
     $('.sidebarMenuInner').append(menuLink);
     menuLink = '<li><a href="https://grcodeclub.github.io/system/post.html">Έγγραφα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
+    menuLink = '<li><a href="https://grcodeclub.github.io/post/colab.html">Google Colab</a></li>';
+    $('.sidebarMenuInner').append(menuLink);
     menuLink = '<li><a href="https://grcodeclub.github.io">GrCode Club</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
