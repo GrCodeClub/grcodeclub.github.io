@@ -63,7 +63,7 @@ img.logo_back{
       max-height: 100%;
       margin:0;
       padding:0;
-      background-color: rgba(0, 0, 0, 0.400)   /*Background Menu Deskpot*/
+      background-color: rgba(0, 0, 0, 0.76)   /*Background Menu Deskpot*/
   }
 
   
@@ -112,7 +112,7 @@ img.logo_back{
       margin-top: 86px;
       transform: translateX(-250px);
       transition: transform 250ms ease-in-out;
-      background-color: rgba(0, 0, 0, 0.400) /*Background Menu Mobile*/
+      background-color: rgba(0, 0, 0, 0.76) /*Background Menu Mobile*/
   }
   
   input[type="checkbox"]:checked ~ #sidebarMenu {
