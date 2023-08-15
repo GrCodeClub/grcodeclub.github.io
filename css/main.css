@@ -113,7 +113,7 @@ img.logo_back{
       width: 250px;
       text-align: center; 
       /*Margin Top*/
-      margin-top: 92px;
+      margin-top: 90px;
       transform: translateX(-250px);
       transition: transform 250ms ease-in-out;
       background: linear-gradient(180deg, #000000e3 0%, #ffffff 100%);
