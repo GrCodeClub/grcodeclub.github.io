@@ -5,6 +5,12 @@ $(document).ready(function() {
 
     menuLink = '<li><a href="https://grcodeclub.github.io/programming/post.html">Έγγραφα </a></li>';
     $('.sidebarMenuInner').append(menuLink);
+
+    menuLink = '<li><a href="https://grcodeclub.github.io">GrCode Club</a></li>';
+    $('.sidebarMenuInner').append(menuLink);
+
+    menuLink = '<li><a href="https://grcodeclub.github.io/post/colab.html">Google Colab</a></li>';
+    $('.sidebarMenuInner').append(menuLink);
     
     menuLink = '<li><a href="https://grcodeclub.github.io/programming/c.html">C</a></li>';
     $('.sidebarMenuInner').append(menuLink);
@@ -26,13 +32,10 @@ $(document).ready(function() {
     
     menuLink = '<li><a href="#">Markdown</a></li>';
     $('.sidebarMenuInner').append(menuLink);
-    
-    menuLink = '<li><a href="https://grcodeclub.github.io/post/colab.html">Google Colab</a></li>';
-    $('.sidebarMenuInner').append(menuLink);
-    
-    menuLink = '<li><a href="https://grcodeclub.github.io">GrCode Club</a></li>';
-    $('.sidebarMenuInner').append(menuLink);
 
+    menuLink = '<li><a href="#">C#</a></li>';
+    $('.sidebarMenuInner').append(menuLink);
+    
     
   });
   
