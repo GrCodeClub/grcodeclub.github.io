@@ -9,6 +9,7 @@ section {
   flex-wrap: wrap;
   overflow: hidden;
   min-height: 100vh;
+  background-image: url("https://grcodeclub.github.io/file/background/6.jpg");
 }
 
 section.bg::before {
