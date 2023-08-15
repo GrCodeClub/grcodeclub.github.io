@@ -21,7 +21,7 @@
       .Menu { 
         position: fixed;
         grid-area: Menu; 
-        background-color: rgba(0, 0, 0, 0.900);
+        background-color: rgba(0, 0, 0, 0.950);
         height: 100%;
         margin-top: 90px;
     }
