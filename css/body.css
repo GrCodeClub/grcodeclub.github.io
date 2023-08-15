@@ -46,7 +46,7 @@
 
 
 .cybersecurity {
-  bbackground-image: url(https://grcodeclub.github.io/file/background/6.jpg);
+  background-image: url("https://grcodeclub.github.io/file/background/6.jpg");
   margin: 0;
   font-family: "Arial";
   background-size: cover;
