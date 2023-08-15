@@ -17,6 +17,16 @@
 }
 
 .website{
+  background-image: url("https://grcodeclub.github.io/file/background/coding.jpg");
+  margin: 0;
+  font-family: "Arial";
+  background-size: cover;
+  background-attachment: fixed; /* Κάνει την εικόνα σταθερή */
+  background-repeat: no-repeat; /* Αποτρέπει την επανάληψη της εικόνας */
+}
+
+
+.programming{
   background-image: url("https://grcodeclub.github.io/file/background/1.jpg");
   margin: 0;
   font-family: "Arial";
@@ -24,6 +34,7 @@
   background-attachment: fixed; /* Κάνει την εικόνα σταθερή */
   background-repeat: no-repeat; /* Αποτρέπει την επανάληψη της εικόνας */
 }
+
 
 
 .cybersecurity {
