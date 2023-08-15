@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -15,58 +16,57 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
     </head>
-
-
+    
+    
     <body class="basic">
-
     <div class="container">
-        <section class="show_desktop"> <!--ΑΡΧΗ show_desktop-->
-            <div class="Header"> <!--ΑΡΧΗ Header show_desktop-->
+        <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
+            <div class="Header"> <!--Αρχή Επικεφαλίδας-->
                 <table>
                     <tr>
-                        <td><img src="./file/logo/logo.png" class="logo"/></td>
-                        <td><h1 class="header_text"><span class="header_text"> GrCDOE CLUB </span></h1></td>
-                        <td><h2 style="color: white;">&nbsp &nbsp &nbsp<span id="clock"></span></h2></td>
+                        <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                        <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                        <td><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/programming/main.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
                     </tr>
                 </table> 
-            </div> <!--ΤΕΛΟΣ Header show_desktop-->
-            <div class="Menu"> <!--ΑΡΧΗ Menu show_desktop-->
-                <div id="sidebarMenu" style=" overflow: auto;">
-                    <ul class="sidebarMenuInner">
-                    </ul>
-                  </div><!--Menu end-->
-            </div><!--ΤΕΛΟΣ Menu show_desktop-->
-        </section> <!--ΤΕΛΟΣ show_desktop-->
+            </div> <!--Τέλος Επικεφαλίδας-->
+       
+            <div class="Menu"> <!--Αρχή Menu-->
+                <div id="sidebarMenu" style="  overflow: auto;">
+                    <ul class="sidebarMenuInner"></ul>
+                </div>
+            </div><!--Τέλος Menu-->
 
-        <section class="show_mobile">  <!--ΑΡΧΗ show_mobile-->
-            <div class="Header"> <!--ΑΡΧΗ Header show_mobile-->
+        </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
+
+        <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
+            <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
                 <table>
                     <tr>
-                        <td><img src="./file/logo/logo.png" class="logo"/></td>
-                        <td><h1 class="header_text"><span class="header_text"> GrCDOE CLUB </span></h1></td>
-                        <td><h2 style="color: white;">&nbsp &nbsp &nbsp<span id="clock"></span></h2></td>
+                        <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                        <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
                     </tr>
                 </table> 
-            </div> <!--ΤΕΛΟΣ Header show_mobile-->
-            <table>  <!--ΑΡΧΗ Menu show_mobile-->
+            </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
+            <table>  <!--Αρχή Menu σε κινητά-->
                 <tr>
                     <td>
                         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
                         <label for="openSidebarMenu" class="sidebarIconToggle">
-                          <div class="spinner diagonal part-1"></div>
-                          <div class="spinner horizontal"></div>
-                          <div class="spinner diagonal part-2"></div>
+                            <div class="spinner diagonal part-1"></div>
+                            <div class="spinner horizontal"></div>
+                            <div class="spinner diagonal part-2"></div>
                         </label>
-                        <div id="sidebarMenu" style="  overflow: auto;">
+                        <div id="sidebarMenu" style="overflow: auto;">
                             <ul class="sidebarMenuInner"></ul>
+                        </div>
+                    </td>
+                </tr>
+            </table> <!--Τέλος Menu σε κινητά-->
+        </section> <!--Τέλος εμφάνιση σε κινητά-->
 
-                        </div><!--Menu end-->
-                        </td>
-                    </tr>
-            </table> <!--ΤΕΛΟΣ Menu show_mobile-->
-        </section> <!--ΤΕΛΟΣ show_mobile-->
-
-
+    
+    
         <div class="Text"> <!--ΑΡΧΗ Text-->
             <div class="Text_bg">
                 <h1 style="text-align:center; background-color: blue; border-top-left-radius: 10px; border-top-right-radius: 10px;">
@@ -84,28 +84,15 @@
                   </div>
                   <script src="./javascript/search_list.js"></script>
             </div>
-   
+    
         </div> <!--ΤΕΛΟΣ Text-->
-
+    
     </div> <!--ΤΕΛΟΣ container-->
         
         <!-- Footer -->
         <footer>
-            <table style="text-align:center;">
-                <tr>
-                   <td>
-                        <a href="https://www.facebook.com/grcode.club/">
-                        <img src="./file/logo/fb.png" class="social"/>
-                        </a>
-                   </td>
-                   <td>
-                    <a href="https://www.instagram.com/grcode_club/">
-                    <img src="./file/logo/insta.png"  class="social"/>
-                    </a>
-                    </td>
-                </tr>
-            </table>        
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/javascript/footer.js"></script>       
         </footer>
     </body>
 </html>
-
