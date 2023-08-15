@@ -34,7 +34,8 @@ $(document).ready(function() {
     menuLink = '<li><a href="https://grcodeclub.github.io">GrCode Club</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    $(document).ready(function() {
+
+    
     
     var menuLink = ' <li><a href="https://grcodeclub.github.io/programming/main.html">Προγραμματισμός</a></li>';
     $('.sidebarMenuInner').append(menuLink);
