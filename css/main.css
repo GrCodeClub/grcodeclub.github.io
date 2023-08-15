@@ -71,6 +71,7 @@ img.logo_back{
 .sidebarMenuInner{
       margin:0;
       padding:0;
+      max-height: 100%;
   }
 
 .sidebarMenuInner li a{
