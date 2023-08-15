@@ -14,25 +14,7 @@ img.logo_back{
   padding-top: 10px;
 }
 
-    /*Text Input*/
-    
-.form__field {
-      font-family: inherit;
-      width: 100%;
-      border: 0;
-      outline: 0;
-      font-size: 1.3rem;
-      color: rgb(255, 255, 255);
-      padding: 7px 0;
-      background: transparent;
-      width:250px;
-      text-align: center;
-    }
-.form__field::placeholder {
-      color: white;
-    }
-    
-    
+  
   /* Custom Scrollbars   */
     
 /* width */
@@ -51,41 +33,15 @@ img.logo_back{
     }
     
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {background: rgb(0, 0, 0);}
-
+::-webkit-scrollbar-thumb:hover {background: rgb(0, 0, 0);
+}
+  /* ΤΕΛΟΣ Custom Scrollbars   */
 
 @media only screen and (min-width: 720px) {
   .show_mobile  {display: none;}
   .show_desktop   {display: block;}
 }
 
-.sidebarMenuInner{
-      max-height: 100%;
-      margin:0;
-      padding:0;
-      background-color: rgba(0, 0, 0, 0.76)   /*Background Menu Deskpot*/
-  }
-
-  
-.sidebarMenuInner li a{
-      color: #fff;
-      font-weight: bold;
-      cursor: pointer;
-      text-decoration: none;
-}
-
-.sidebarMenuInner li{
-      list-style: none;
-      padding: 20px;
-      cursor: pointer;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-}
-
-.sidebarMenuInner li span{
-      display: block;
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.5);
-}
 
 /* Στυλ για κινητές συσκευές */
 
@@ -94,35 +50,21 @@ img.logo_back{
   .show_desktop {display: none;}
 
   /*Menu Start*/
-  .mainInner{
-      display: table;
-      height: 100%;
-      width: 100%;
-      text-align: center;
-      
-  }
+
   #sidebarMenu {
       height: 100%;
       position: fixed;
       left: 0;
       width: 250px;
       text-align: center;
-      height: 90%;
-      /*Margin Top*/
-      margin-top: 86px;
+      height: 90%;  
+      margin-top: 88px;  /*Margin Top*/
       transform: translateX(-250px);
       transition: transform 250ms ease-in-out;
-      background-color: rgba(0, 0, 0, 0.76) /*Background Menu Mobile*/
+      background-color: rgba(0, 0, 0, 0.950);   /*Background Menu Deskpot*/
   }
   
-  input[type="checkbox"]:checked ~ #sidebarMenu {
-      transform: translateX(0);
-  }
-  input[type=checkbox] {
-      transition: all 0.3s;
-      box-sizing: border-box;
-      display: none;
-  }
+  /*Button Open Menu*/
   .sidebarIconToggle {
       transition: all 0.3s;
       box-sizing: border-box;
@@ -160,11 +102,19 @@ img.logo_back{
       float: left;
       margin-top: 3px;
   }
+
+  input[type="checkbox"]:checked ~ #sidebarMenu { transform: translateX(0);}
+  
+  input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;}
+
   input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
       transition: all 0.3s;
       box-sizing: border-box;
-      opacity: 0;
-  }
+      opacity: 0;}
+
   input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
       transition: all 0.3s;
       box-sizing: border-box;
@@ -179,3 +129,24 @@ img.logo_back{
   }
   /*Menu end*/
 } 
+
+/*Menu ΣΤΟΙΧΕΙΑ*/
+.sidebarMenuInner li a{
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sidebarMenuInner li{
+  list-style: none;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner li span{
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
