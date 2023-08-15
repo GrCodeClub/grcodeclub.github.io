@@ -35,6 +35,9 @@ $(document).ready(function() {
 
     menuLink = '<li><a href="#">C#</a></li>';
     $('.sidebarMenuInner').append(menuLink);
+
+    menuLink = '<li style="height: 300px;"></li>';
+    $('.sidebarMenuInner').append(menuLink);
     
     
   });
