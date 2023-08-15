@@ -30,11 +30,11 @@ $(document).ready(function() {
     
     menuLink = '<li><a href="#">Markdown</a></li>';
     $('.sidebarMenuInner').append(menuLink);
-
-    menuLink = '<li><a href="#"> </a></li>';
-    $('.sidebarMenuInner').append(menuLink);
     
     menuLink = '<li><a href="https://grcodeclub.github.io">GrCode Club</a></li>';
+    $('.sidebarMenuInner').append(menuLink);
+
+    menuLink = '<li><a href="#" style="margin-top: 100px;"> </a></li>';
     $('.sidebarMenuInner').append(menuLink);
   });
   
