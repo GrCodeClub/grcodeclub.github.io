@@ -74,9 +74,6 @@ body {
         
         background: rgba(0, 0, 0, 0.900);    /*Background Menu Deskpot*/
     }
-    ul.sidebarMenuInner{
-        max-height: 100%;
-    }
     
   .sidebarMenuInner li a{
         color: #fff;
