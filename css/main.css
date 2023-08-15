@@ -71,9 +71,13 @@ body {
   .sidebarMenuInner{
         margin:0;
         padding:0;
-        max-height: 75%;
+        
+        background: rgba(0, 0, 0, 0.900);    /*Background Menu Deskpot*/
     }
-  
+    ul.sidebarMenuInner{
+        max-height: 100%;
+    }
+    
   .sidebarMenuInner li a{
         color: #fff;
         font-weight: bold;
@@ -91,7 +95,7 @@ body {
   .sidebarMenuInner li span{
         display: block;
         font-size: 14px;
-        color: rgba(255, 255, 255, 0.50);
+        color: rgba(255, 255, 255, 0.5);
   }
   
   /* Στυλ για κινητές συσκευές */
@@ -114,12 +118,13 @@ body {
         left: 0;
         width: 250px;
         text-align: center;
-        max-height: 85%;
+        max-height: 100%;
         /*Margin Top*/
         margin-top: 86px;
         transform: translateX(-250px);
         transition: transform 250ms ease-in-out;
-        background: black    }
+        background: rgba(0, 0, 0, 0.900);    /*Background Menu Mobile*/
+    }
     input[type="checkbox"]:checked ~ #sidebarMenu {
         transform: translateX(0);
     }
