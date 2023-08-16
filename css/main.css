@@ -11,7 +11,22 @@ img.logo_back{
   height: 60px;
   padding-top: 10px; }
 
-
+   /*Text Input*/
+    
+    .form__field {
+      font-family: inherit;
+      width: 100%;
+      border: 0;
+      outline: 0;
+      font-size: 1.3rem;
+      color: rgb(255, 255, 255);
+      padding: 7px 0;
+      background: transparent;
+      width:250px;
+      text-align: center;
+    }
+    .form__field::placeholder {color: white;}
+    
     
 /* Custom Scrollbars   */
     
