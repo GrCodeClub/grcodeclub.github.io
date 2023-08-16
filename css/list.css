@@ -8,13 +8,7 @@
 .list-container {
     justify-content: center;
   }
-ul {
-  white-space: nowrap;
-  overflow-x: auto;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
+ul {white-space: nowrap;}
 li{
   padding-top: 10px;
   margin-left: 10px;
