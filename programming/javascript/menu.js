@@ -30,7 +30,7 @@ $(document).ready(function() {
     menuLink = '<li><a href="https://grcodeclub.github.io/programming/docker.html">Docker</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="#">Markdown</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/programming/markdown.html">Markdown</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     menuLink = '<li><a href="#">C#</a></li>';
