@@ -27,7 +27,7 @@ $(document).ready(function() {
     menuLink = '<li><a href="https://grcodeclub.github.io/website/main.html">Website</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="#">Docker</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/programming/docker.html">Docker</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
     menuLink = '<li><a href="#">Markdown</a></li>';
