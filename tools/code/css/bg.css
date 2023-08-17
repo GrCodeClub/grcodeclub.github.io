@@ -1,0 +1,27 @@
+@import url("https://rsms.me/inter/inter.css");
+.appearance{
+    display:grid;
+    height:24px;
+    align-items:center;
+    padding:0 16px;
+    grid-gap:12px;
+    grid-template-columns:45px 1fr 45px;
+    --frame-control-color:rgba(0, 0, 0, 0.575);
+}
+
+
+.space{display:flex;gap:6px}
+
+.buttons{
+    width:12px;height:12px;border-radius:6px;background-color:var(--frame-control-color)}
+.name_input{
+    position:relative;
+    height:16px;color:var(--frame-title-placeholder-color);
+    font-family:Inter,sans-serif;
+    font-size:12px;
+    font-weight:500;
+    letter-spacing:.32px;
+    line-height:12px;
+    text-align:center
+}
+
