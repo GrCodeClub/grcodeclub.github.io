@@ -1,0 +1,159 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta property="og:image" content="https://i.ibb.co/Dw600xC/1.png"/>
+        <meta property="og:title" content="GRCODE CLUB">
+        <script src="https://grcodeclub.github.io/javascript/jquery.js"></script>
+        <script src="https://grcodeclub.github.io/post/javascript/menu.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <link rel="stylesheet" href="./css/code.css">
+        <link rel="stylesheet" href="./css/image.css">
+        <link rel="stylesheet" href="./css/input.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-c.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-java.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-cpp.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-plsql.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-sql.min.js"></script>
+        <script src=""></script>
+        <script src=""></script>
+        <script src=""></script>
+        <script src=""></script>
+        <script src=""></script>
+        <script src=""></script>
+        <script src=""></script>
+        <script src=""></script>
+        <script src=""></script>
+        <script src=""></script>
+        
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+      
+        <style>
+
+
+
+        </style>
+    </head>
+    
+    
+    <body class="basic"> 
+    
+<div class="container">
+        <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
+            <div class="Header"> <!--Αρχή Επικεφαλίδας-->
+                <table>
+                    <tr>
+                        <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                        <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                        <td><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/programming/main.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
+                    </tr>
+                </table> 
+            </div> <!--Τέλος Επικεφαλίδας-->
+       
+            <div class="Menu"> <!--Αρχή Menu-->
+                <div id="sidebarMenu" style="  overflow: auto;">
+                    <ul class="sidebarMenuInner"></ul>
+                </div>
+            </div><!--Τέλος Menu-->
+
+        </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
+
+        <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
+            <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
+                <table>
+                    <tr>
+                        <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                        <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                    </tr>
+                </table> 
+            </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
+            <table>  <!--Αρχή Menu σε κινητά-->
+                <tr>
+                    <td>
+                        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                        <label for="openSidebarMenu" class="sidebarIconToggle">
+                            <div class="spinner diagonal part-1"></div>
+                            <div class="spinner horizontal"></div>
+                            <div class="spinner diagonal part-2"></div>
+                        </label>
+                        <div id="sidebarMenu" style="overflow: auto;">
+                            <ul class="sidebarMenuInner"></ul>
+                        </div>
+                    </td>
+                </tr>
+            </table> <!--Τέλος Menu σε κινητά-->
+        </section> <!--Τέλος εμφάνιση σε κινητά-->
+
+    
+    
+        <div class="Text"> <!--ΑΡΧΗ Text-->
+            <div class="Text_bg">
+                  <h1 style="text-align: center;">Ζωντανός Έγχρωμος Κώδικας</h1>
+                <div id="contentToCapture">
+                    <textarea class="code" id="codeTextarea" rows="10" cols="50"></textarea>
+                </div>
+                <br>
+                <div id="bg">
+                    <label for="bgColor">Χρώμα Φόντου:</label>
+                    <input type="color" id="bgColor" name="bgColor" value="#000000">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label for="languageSelect">Επιλέξτε γλώσσα:</label>
+                    <select id="languageSelect" name="language">
+                        <option value="c">C</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                        <option value="html">HTML</option>
+                        <option value="cpp">C++</option>
+                        <option value="sql">SQL</option>
+                    </select>
+                </div>
+                
+                <br>
+                <div>
+                <label for="widthInput">Πλάτος προεπισκόπησης:</label>
+                    <input type="number" id="widthInput" name="widthInput" value="500" min="100" max="1000">
+                </div>
+                <script src="./js/size_preview.js"> </script>
+                <br>
+                <button id="generateImage">Δημιουργία Εικόνας</button>
+                <br><br><br>
+                <div id="image" style="background-color: rgb(4, 85, 2); border: 10px solid rgb(4, 85, 2) ">
+                    <div id="bg_preview" style="background-color: #000000; border-radius: 10px;">
+                        <div style="background-color: rgb(0, 0, 0); border-top-left-radius: 10px; border-top-right-radius: 10px; text-align: center;">
+                            <input type="text" placeholder="Εισαγωγή ονόματος" class="name">
+                        </div>
+                        <div id="preview" class="preview" style="padding-left: 10px;">
+                            <!-- Εδώ θα προβάλλεται ο κώδικας -->
+                             </div>
+                    </div>
+                </div>
+                <script src="./js/preview.js"> </script>
+                
+            </div> <!--ΤΕΛΟΣ Text-->
+        </div> <!--ΤΕΛΟΣ Text-->
+    
+    </div> <!--ΤΕΛΟΣ container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/javascript/footer.js"></script>       
+        </footer>
+    </body>
+</html>
