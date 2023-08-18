@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    var menuLink = ' <li><a href="https://grhttps://grcodeclub.github.io/tools/code/image.html">Κωδικας</a></li>';
+    var menuLink = ' <li><a href="https://https://grcodeclub.github.io/tools/code/image.html">Κωδικας</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = ' <li><a href="https://grhttps://grcodeclub.github.io/tools/convert/tool.html">Μετατροπέας</a></li>';
+    menuLink = ' <li><a href="https://https://grcodeclub.github.io/tools/convert/tool.html">Μετατροπέας</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     
