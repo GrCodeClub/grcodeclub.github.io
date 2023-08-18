@@ -1,13 +1,15 @@
 .appearance{
     display:grid;
-    height:24px;
+    height:36px;
     align-items:center;
-    grid-template-columns:45px 1fr 45px;
-   
+    grid-template-columns:75px 1fr 45px;
 }
 
 
-.space{display:flex;gap:6px}
+.space{
+    margin-left: 10px;
+    display:flex;
+    gap:10px}
 
 .buttons1{
     width:12px;
@@ -37,6 +39,8 @@
     font-weight:500;
     letter-spacing:.32px;
     line-height:12px;
-    text-align:center
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
