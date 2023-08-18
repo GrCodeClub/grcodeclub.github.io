@@ -8,10 +8,10 @@
 .list-container {
     justify-content: center;
   }
-ul.space {white-space: nowrap;}
+
+ul {white-space: nowrap;}
 li{
   padding-top: 10px;
-  margin-left: 10px;
   margin-right: 10px;
 }
 
