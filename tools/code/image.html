@@ -1,4 +1,5 @@
 
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -85,7 +86,7 @@
             <div class="Text_bg">
                   <h1 style="text-align: center;">Έγχρωμος Κώδικας</h1>
                 <div id="contentToCapture">
-                    <textarea style="text-align: left;" class="code" id="codeTextarea" rows="40" cols="50"></textarea>
+                    <textarea style="text-align: left;" class="code" id="codeTextarea" rows="10" cols="50" placeholder="Kώδικας "></textarea>
                 </div>
                 <br>
                 <div id="bg">
@@ -97,13 +98,13 @@
                 <div>
                     <label for="languageSelect">Επιλέξτε γλώσσα:</label>
                     <select id="languageSelect" name="language">
-                        <option value="c">C</option>
-                        <option value="javascript">JavaScript</option>
-                        <option value="java">Java</option>
-                        <option value="python">Python</option>
-                        <option value="html">HTML</option>
-                        <option value="cpp">C++</option>
-                        <option value="sql">SQL</option>
+                        <option value="C">C</option>
+                        <option value="Javascript">JavaScript</option>
+                        <option value="Java">Java</option>
+                        <option value="Python">Python</option>
+                        <option value="Html">HTML</option>
+                        <option value="Cpp">C++</option>
+                        <option value="SQL">SQL</option>
                     </select>
                 </div>
                 <br>
@@ -113,8 +114,10 @@
                 </div>
                 <br>
                 <button id="generateImage">Δημιουργία Εικόνας</button>
-                <br><br>
-                <div id="image" style="border-radius: 5px; padding-top: 20px; padding-left: 20px; padding-right: 20px;background-image: linear-gradient(140deg, rgb(0, 0, 0), rgb(36, 14, 95));">
+                <br>
+                <p>Μπορείτε να αλλάξετε το όνομα του αρχείου που εμφανίζετε στην εικόνα, σβήνοντας το παλιό όνομα και πληκτρολογώντας το καινούργιο. </p>
+                <br>
+                <div id="image" style="border-radius: 5px; margin-left:10px; padding-top: 20px; padding-left: 20px; padding-right: 20px;background-image: linear-gradient(140deg, rgb(0, 0, 0), rgb(36, 14, 95));">
                 <div id="bg_preview"  style=" border-radius: 10px; background-color: rgb(12, 12, 1);">
                 <div  class="appearance">
                     <div class="space"> 
@@ -123,7 +126,7 @@
                         <div class="buttons3"> </div>
                     </div>
                     <div class="name_input">
-                        <input type="text" placeholder="Εισαγωγή ονόματος" class="name" id="name">
+                        <input type="text" class="name" id="name">
                     </div>
                 </div>
                  <div>
@@ -136,7 +139,7 @@
                 <h5 style="color: rgba(255, 255, 255, 0.705); text-align: center; padding-bottom: 10px;"> 
                     Η εικόνα δημιουργήθηκε στο GrCode Club</h5>
                 <script src="./js/preview.js"> </script>
-                </div>
+                </div> <br>
                 <script src="./js/size_preview.js"> </script>
             </div> <!--ΤΕΛΟΣ Text-->
         </div> <!--ΤΕΛΟΣ Text-->

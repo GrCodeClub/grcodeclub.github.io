@@ -8,8 +8,10 @@ widthInput.addEventListener("input", function() {
 
 
 textInput.addEventListener("input", function() {
-    const textWidth = textInput.value.length * 2 + "px"; // You can adjust the multiplier
-    image.style.width = textWidth;
+    const textWidth = textInput.value.length * 2 + "px";
+    if ( (textInput.value.length * 2 ) > 401){
+        image.style.width = textWidth;
+    }
 });
 
 // Ορίστε το αρχικό πλάτος της προεπισκόπησης
