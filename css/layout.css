@@ -55,5 +55,6 @@
     position: fixed;
     width: 100%;
     grid-area: Header; 
-    background-color: rgba(0, 0, 0, 0.950);
+    background-color: black;
+    z-index: 100;
 }
