@@ -9,7 +9,7 @@
     justify-content: center;
   }
 
-ul {white-space: nowrap;}
+ul.space {white-space: nowrap;}
 li{
   right:2px;
   padding-top: 10px;
