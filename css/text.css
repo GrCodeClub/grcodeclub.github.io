@@ -1,3 +1,4 @@
+
 div.text_bg{
   background-color: rgba(0, 0, 0, 0.658);
   color: white;
@@ -20,6 +21,10 @@ h1.title{
   border-top-right-radius: 10px;
 }
 
+.highlight_blue{
+  padding-left: 20px;
+  background-color: rgba(3, 3, 65, 0.541);
+  }
 
 a.link {
   padding: 5px 1px 5px 1px;
