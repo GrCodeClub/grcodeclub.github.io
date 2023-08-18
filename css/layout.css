@@ -7,14 +7,13 @@
       grid-template-areas:
         "Header Header"
         "Menu Text" ;} 
-        
-        
+             
     .Text { 
           grid-area: Text;  
           color: white;
           margin-top: 10px;
           margin-bottom: 100px;
-          margin-left: 35px;
+          margin-right: 10px;
           margin-right: 20px;
       }
 
@@ -26,8 +25,8 @@
         margin-top: 90px;
     }
        
-
 }
+
 
 /* Στυλ για κινητές συσκευές */
 @media only screen and (max-width: 720px) {
@@ -39,13 +38,12 @@
     "Header"
     "Text";}
 
-
     .Text { 
       grid-area: Text;  
       color: white;
       margin-top: 10px;
       margin-bottom: 100px;
-      margin-left: 10px;
+      margin-left: 20px;
       margin-right: 20px;
   }
     
