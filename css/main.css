@@ -151,7 +151,7 @@ img.logo_back{
 
 .sidebarMenuInner li{
   list-style: none;
-  padding: 20px;
+  padding-top: 20px;
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
