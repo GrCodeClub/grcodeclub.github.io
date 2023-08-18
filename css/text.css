@@ -7,6 +7,14 @@ div.text_bg{
   padding-bottom: 20px;
 }
 
+div.cmd{
+  background-color: rgb(3, 3, 41);
+  color: white;
+  border-radius: 20px;
+  text-align: justify;
+  margin-bottom: 100px;
+  padding-bottom: 20px;
+}
 h1.title{
   text-align:center; 
   background-color: blue; 
@@ -60,6 +68,11 @@ color: white;
 
 p{
 text-align: justify;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+p.cmd{
 margin-left: 10px;
 margin-right: 10px;
 }
