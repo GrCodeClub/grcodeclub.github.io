@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -108,9 +109,8 @@
                 <br>
                 <div>
                 <label for="widthInput">Πλάτος προεπισκόπησης:</label>
-                    <input type="number" id="widthInput" name="widthInput" value="500" min="100" max="1000">
+                    <input type="number" id="widthInput" name="widthInput" value="400" min="400" max="1000">
                 </div>
-                <script src="./js/size_preview.js"> </script>
                 <br>
                 <button id="generateImage">Δημιουργία Εικόνας</button>
                 <br><br>
@@ -123,19 +123,21 @@
                         <div class="buttons3"> </div>
                     </div>
                     <div class="name_input">
-                        <input type="text" placeholder="Εισαγωγή ονόματος" class="name">
+                        <input type="text" placeholder="Εισαγωγή ονόματος" class="name" id="name">
                     </div>
                 </div>
                  <div>
                         <div id="preview" class="preview" style="font-size: 17px; padding-left: 10px;">
                             <!-- Εδώ θα προβάλλεται ο κώδικας -->
                         </div>
+                        
                 </div>
                 </div>
                 <h5 style="color: rgba(255, 255, 255, 0.705); text-align: center; padding-bottom: 10px;"> 
                     Η εικόνα δημιουργήθηκε στο GrCode Club</h5>
                 <script src="./js/preview.js"> </script>
                 </div>
+                <script src="./js/size_preview.js"> </script>
             </div> <!--ΤΕΛΟΣ Text-->
         </div> <!--ΤΕΛΟΣ Text-->
     
@@ -148,3 +150,4 @@
         </footer>
     </body>
 </html>
+
