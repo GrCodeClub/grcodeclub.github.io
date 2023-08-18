@@ -5,14 +5,33 @@
     padding:0 16px;
     grid-gap:12px;
     grid-template-columns:45px 1fr 45px;
-    --frame-control-color:rgba(0, 0, 0, 0.575);
+   
 }
 
 
 .space{display:flex;gap:6px}
 
-.buttons{
-    width:12px;height:12px;border-radius:6px;background-color:var(--frame-control-color)}
+.buttons1{
+    width:12px;
+    height:12px;
+    border-radius:6px;
+    background-color:rgb(82, 3, 3)
+}
+
+.buttons2{
+    width:12px;
+    height:12px;
+    border-radius:6px;
+    background-color:rgb(8, 3, 82)
+}
+
+
+.buttons3{
+    width:12px;
+    height:12px;
+    border-radius:6px;
+    background-color:rgb(82, 74, 3)
+}
 .name_input{
     height:16px;color:var(--frame-title-placeholder-color);
     font-family:Inter,sans-serif;
