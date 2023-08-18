@@ -6,13 +6,5 @@ widthInput.addEventListener("input", function() {
     image.style.width =  widthInput + "px";
 });
 
-
-textInput.addEventListener("input", function() {
-    const textWidth = textInput.value.length * 2 + "px";
-    if ( (textInput.value.length * 2 ) > 401){
-        image.style.width = textWidth + "px";
-    }
-});
-
 // Ορίστε το αρχικό πλάτος της προεπισκόπησης
 image.style.width = widthInput + "px";
