@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/code_bg.css">
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
         <title> GrCode Club</title>
     </head>
@@ -43,21 +44,25 @@
                     <table>
                         <tr>
                             <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
-                            <td><h1 class="header_text"><span class="header_text" >  GrCode Club </span></h1></td>
+                            <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
                         </tr>
                     </table> 
                 </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
-                <div>
-                    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-                    <label for="openSidebarMenu" class="sidebarIconToggle">
-                      <div  class="spinner diagonal part-1"></div>
-                      <div  class="spinner horizontal"></div>
-                      <div  class="spinner diagonal part-2"></div>
-                    </label>
-                    <div id="sidebarMenu" style="overflow: auto;">
-                        <ul class="sidebarMenuInner"></ul>
-                    </div>
-                  </div>
+                <table>  <!--Αρχή Menu σε κινητά-->
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                            <label for="openSidebarMenu" class="sidebarIconToggle">
+                                <div class="spinner diagonal part-1"></div>
+                                <div class="spinner horizontal"></div>
+                                <div class="spinner diagonal part-2"></div>
+                            </label>
+                            <div id="sidebarMenu" style="overflow: auto;">
+                                <ul class="sidebarMenuInner"></ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table> <!--Τέλος Menu σε κινητά-->
             </section> <!--Τέλος εμφάνιση σε κινητά-->
 
             <div class="Text"> <!--Αρχή Κειμένου-->
@@ -83,51 +88,51 @@
                      <h1 id="tm">Stuct tm</h1>
                       <p>Χρησιμοποιείται για την αναπαράσταση ημερομηνιών και ωρών.
                         <br><br>
-                        Η δομή struct tm ορίζεται στο αρχείο κεφαλίδας <b>&lt;time.h&gt;</b> και έχει την εξής μορφή:
-                          <ul>
-                            <li>tm_sec: Αναπαριστά τα δευτερόλεπτα (0-59).</li>
-                            <li>tm_min: Αναπαριστά τα λεπτά (0-59).</li>
-                            <li>tm_hour: Αναπαριστά τις ώρες (0-23).</li>
-                            <li>tm_mday: Αναπαριστά την ημέρα του μήνα (1-31).</li>
-                            <li>tm_mon: Αναπαριστά τον μήνα (0-11, 0 = Ιανουάριος).</li>
-                            <li>tm_year: Αναπαριστά το έτος (έτος - 1900).</li>
-                            <li>tm_wday: Αναπαριστά την ημέρα της εβδομάδας (0-6, 0 = Κυριακή).</li>
-                            <li>tm_yday: Αναπαριστά την ημέρα του έτους (0-365).</li>
-                            <li>tm_isdst: Αναπαριστά την ένδειξη θερινής ώρας (1 = θερινή ώρα, 0 = μη θερινή ώρα, -1 = άγνωστο).</li>
-                          </ul>
-                      </p>
-                      <div style="background-color: rgba(75, 75, 119, 0.39); font-size: 14px;">
-                      <code>
-                        struct tm { <br>
-                          &emsp; int tm_sec;<br>
-                          &emsp; int tm_min;<br>
-                          &emsp; int tm_hour;<br>
-                          &emsp; int tm_mday;<br>
-                          &emsp; int tm_mon;<br>
-                          &emsp; int tm_year;<br>
-                          &emsp; int tm_wday;<br>
-                          &emsp; int tm_yday;<br>
-                          &emsp; int tm_isdst;<br>
-                      };
-                      </code> </div>
+                        Η δομή struct tm ορίζεται στο αρχείο κεφαλίδας <b>&lt;time.h&gt;</b> και έχει την εξής μορφή
+
+                      <div id="bg_preview"  style=" border-radius: 10px; background-color: rgb(12, 12, 1); margin-left: 10px; margin-right: 10px; padding-bottom: 2px;">
+                        <div  class="appearance">
+                            <div class="space"> 
+                                <div class="buttons1"></div><div class="buttons2"></div><div class="buttons3"> </div>
+                            </div>
+                            <div class="name_input">C</div>
+                        </div> <div>
+                            <code>
+                              &emsp;struct tm { <br>
+                                &emsp; &emsp; int tm_sec; // Αναπαριστά τα δευτερόλεπτα (0-59)<br>
+                                &emsp; &emsp; int tm_min; // Αναπαριστά τα λεπτά (0-59)<br>
+                                &emsp; &emsp; int tm_hour; // Αναπαριστά τις ώρες (0-23) <br>
+                                &emsp; &emsp; int tm_mday; // Αναπαριστά την ημέρα του μήνα (1-31)<br>
+                                &emsp; &emsp; int tm_mon; // Αναπαριστά τον μήνα (0-11, 0 = Ιανουάριος)<br>
+                                &emsp;  &emsp; int tm_year; // Αναπαριστά το έτος (έτος - 1900)<br>
+                                &emsp;  &emsp; int tm_wday; // Αναπαριστά την ημέρα της εβδομάδας <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(0-6, 0 = Κυριακή) <br>
+                                &emsp;  &emsp; int tm_yday; // Αναπαριστά την ημέρα του έτους (0-365)<br>
+                                &emsp;  &emsp; int tm_isdst; // Aναπαριστά την ένδειξη θερινής ώρας <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(1 = θερινή ώρα, 0 = μη θερινή ώρα, -1 = άγνωστο)<br>
+                                  &emsp;};
+                                  <br><br>
+                              </code>
+                        </div> </div>
                       <br><hr>
         
                       <h1 id="timeval">Struct timeval </h1>
                       <p>Χρησιμοποιείται για την αναπαράσταση χρονικών διαστημάτων με ακρίβεια μέχρι τα μικροδευτερόλεπτα.
                         <br><br>
-                        Η δομή struct timeval ορίζεται στο αρχείο κεφαλίδας <b>&lt;sys/time.h&gt;</b> και έχει την εξής μορφή:
+                        Η δομή struct timeval ορίζεται στο αρχείο κεφαλίδας <b>&lt;sys/time.h&gt;</b> και έχει την εξής μορφή
                           
-                        <ul>
-                          <li>tv_sec: Αναπαριστά τον αριθμό των δευτερολέπτων.</li>
-                          <li>tv_usec: Αναπαριστά τον αριθμό των μικροδευτερολέπτων.</li>
-                        </ul>
-                      </p>
-                      <div style="background-color: rgba(75, 75, 119, 0.39); font-size: 14px;"> <code>
-                      struct timeval {          <br>
-                          &emsp;time_t tv_sec;  <br>
-                          &emsp;long tv_usec;   <br>
-                      };              
-                      </code></div>
+                        <div id="bg_preview"  style=" border-radius: 10px; background-color: rgb(12, 12, 1); margin-left: 10px; margin-right: 10px; padding-bottom: 2px;">
+                          <div  class="appearance">
+                              <div class="space"> 
+                                  <div class="buttons1"></div><div class="buttons2"></div><div class="buttons3"> </div>
+                              </div>
+                              <div class="name_input">C</div>
+                          </div> <div>
+                              <code>
+                                &emsp;struct timeval {         <br>
+                                    &emsp; &emsp;time_t tv_sec;  // Αναπαριστά τον αριθμό των δευτερολέπτων<br>
+                                    &emsp; &emsp;long tv_usec;   // Αναπαριστά τον αριθμό των μικροδευτερολέπτων<br>
+                                    &emsp;  };           
+                                </code>
+                          </div> </div>
                       <br><hr>
         
                       <h1 id="timespec">Stuct timespec </h1>
