@@ -7,8 +7,6 @@
 }
 .list-container {justify-content: center;}
 
-ul.space {white-space: nowrap;}
-
 ul{
   list-style-type: none;
   padding-left: 25;
@@ -32,4 +30,7 @@ li{
       margin-right: 20px;
       list-style-type: none;
     }
+
+  ul {white-space: nowrap;}
+
   }
