@@ -2,9 +2,18 @@ const codeTextarea = document.getElementById("codeTextarea");
 const preview = document.getElementById("preview");
 const languageSelect = document.getElementById("languageSelect"); // Προσθέστε το ID του dropdown εδώ
 
+
+
+
 function updatePreview() {
-    document.getElementById("name").value = languageSelect.value;
-    const selectedLanguage = languageSelect.value.toLowerCase();; // Χρησιμοποιήστε την επιλεγμένη επιλογή από το dropdown
+    const selectedLanguage = languageSelect.value;
+
+    if (selectedLanguage == "java") document.getElementById("name").value = "Αρχείο.java";
+    if (selectedLanguage == "c") document.getElementById("name").value = "Αρχείο.c";
+    if (selectedLanguage == "python") document.getElementById("name").value = "Αρχείο.py";
+    if (selectedLanguage == "javascript") document.getElementById("name").value = "Αρχείο.js";
+    if (selectedLanguage == "html") document.getElementById("name").value = "Αρχείο.html";
+
     const language = Prism.languages[selectedLanguage];
     preview.innerHTML = '<pre>' + Prism.highlight(codeTextarea.value, language) + '</pre> <br>';
 }
