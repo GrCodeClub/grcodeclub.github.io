@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -49,17 +50,22 @@
                     </tr>
                 </table> 
             </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
-            <div>
-                    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-                    <label for="openSidebarMenu" class="sidebarIconToggle">
-                        <div class="spinner diagonal part-1"></div>
-                        <div class="spinner horizontal"></div>
-                        <div class="spinner diagonal part-2"></div>
-                    </label>
-                    <div id="sidebarMenu">
-                        <ul class="sidebarMenuInner"></ul>
-                    </div>
-                </div>
+            <table>  <!--Αρχή Menu σε κινητά-->
+                <tr>
+                    <td>
+                        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                        <label for="openSidebarMenu" class="sidebarIconToggle">
+                          <div class="spinner diagonal part-1"></div>
+                          <div class="spinner horizontal"></div>
+                          <div class="spinner diagonal part-2"></div>
+                        </label>
+                        <div id="sidebarMenu" style="overflow: auto;">
+                          <ul class="sidebarMenuInner">
+                          </ul>
+                        </div>
+                        </td>
+                    </tr>
+            </table> <!--Τέλος Menu σε κινητά-->
         </section> <!--Τέλος εμφάνιση σε κινητά-->
 
 
