@@ -37,10 +37,7 @@ pre[class*="language-"] {
 	overflow: auto;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #2d2d2d;
-}
+
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
@@ -246,6 +243,8 @@ pre[class*="language-"] a[href]:hover {
 	cursor: help;
 	text-decoration: underline;
 }
+
+
 .command-line-prompt {
 	border-right: 1px solid #999;
 	display: block;
