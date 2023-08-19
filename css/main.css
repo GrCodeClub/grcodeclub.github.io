@@ -63,6 +63,7 @@ img.logo_back{
   /*Menu Start*/
 
   #sidebarMenu {
+      overflow: auto;
       height: 100%;
       position: fixed;
       left: 0;
