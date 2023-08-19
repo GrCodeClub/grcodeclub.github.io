@@ -23,6 +23,7 @@
         background-color: rgba(0, 0, 0, 0.950);
         height: 100%;
         margin-top: 90px;
+        z-index:1;
     }
        
 }
