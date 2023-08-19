@@ -31,6 +31,6 @@ li{
       list-style-type: none;
     }
 
-  ul {white-space: nowrap;}
+  ul.no_space {white-space: nowrap;}
 
   }
