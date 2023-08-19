@@ -1,4 +1,5 @@
 
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -8,15 +9,16 @@
         <script src="https://grcodeclub.github.io/website/javascript/menu.js"></script>
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+        <script src="https://grcodeclub.github.io/javascript/prism.js"></script>
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
-        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout2.css">
          <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/tools/code/css/bg.css">
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
         <title> GrCode Club</title>
-
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/prism.css" />
     </head>
 
    <body class="website">
@@ -72,7 +74,7 @@
 
                     
                     <h1 class="highlight_blue">Κείμενο με πλάγια μορφοποίηση</h1>                         
-                    <div id="bg_preview"  style=" border-radius: 10px; background-color: rgb(12, 12, 1); margin-left: 10px; margin-right: 10px; padding-bottom: 2px;">
+                    <div style=" border-radius: 10px; background-color: rgb(12, 12, 1); margin-left: 10px; margin-right: 10px; padding-bottom: 2px;">
                       <div  class="appearance">
                           <div class="space"> 
                               <div class="buttons1"> </div>
@@ -81,17 +83,15 @@
                           </div>
                           <div class="name_input">Html</div>
                       </div>
-                       <div>
-                          <p class="cmd">
-                            &lt;p&gt;
-                            <br> &nbsp;&nbsp; &nbsp;&nbsp;&lt;em&gt;Αυτό είναι ένα κείμενο με έντονη μορφοποίηση. &lt;/em&gt; <br>
-                            &lt;/p&gt;
-                        </p>   
+                      <div  class="line-numbers"><pre class="code_editor"><code class="language-html">
+&lt;p&gt;
+    &lt;em&gt;Αυτό είναι ένα κείμενο με έντονη μορφοποίηση.&lt;/em&gt;
+&lt;/p&gt;</code></pre>    
                       </div>
                       </div>
 
                     <h1 class="highlight_blue">Κείμενο με έντονη μορφοποίηση</h1>
-                        <div id="bg_preview"  style=" border-radius: 10px; background-color: rgb(12, 12, 1); margin-left: 10px; margin-right: 10px; padding-bottom: 2px;">
+                        <div style=" border-radius: 10px; background-color: rgb(12, 12, 1); margin-left: 10px; margin-right: 10px; padding-bottom: 2px;">
                         <div  class="appearance">
                             <div class="space"> 
                                 <div class="buttons1"> </div>
@@ -100,17 +100,15 @@
                             </div>
                             <div class="name_input">Html</div>
                         </div>
-                         <div>
-                            <p class="cmd">
-                                &lt;p&gt;
-                                <br> &nbsp;&nbsp; &nbsp;&nbsp;&lt;strong&gt;Αυτό είναι ένα κείμενο με έντονη μορφοποίηση. &lt;/strong&gt; <br>
-                                &lt;/p&gt;
-                            </p>   
+                        <div  class="line-numbers"><pre class="code_editor"><code class="language-html">
+&lt;p&gt;
+    &lt;strong&gt;Αυτό είναι ένα κείμενο με έντονη μορφοποίηση.&lt;/strong&gt; 
+&lt;/p&gt;</code></pre>    
                         </div>
                         </div>
 
                       <h1 class="highlight_blue">Εικόνα</h1>
-                      <div id="bg_preview"  style=" border-radius: 10px; background-color: rgb(12, 12, 1); margin-left: 10px; margin-right: 10px; padding-bottom: 2px;">
+                      <div i style=" border-radius: 10px; background-color: rgb(12, 12, 1); margin-left: 10px; margin-right: 10px; padding-bottom: 2px;">
                         <div  class="appearance">
                             <div class="space"> 
                                 <div class="buttons1"> </div>
@@ -119,15 +117,13 @@
                             </div>
                             <div class="name_input">Html</div>
                         </div>
-                         <div>
-                            <p class="cmd">
-                                &lt;img src="image.jpg" alt="Περιγραφή εικόνας"&gt;
-                            </p>   
-                        </div>
-                        </div>
+                            <div  class="line-numbers">
+                                <pre class="bg"><code class="language-html">
+&lt;img src="image.jpg" alt="Περιγραφή εικόνας"&gt;</code></pre>                                
+                            </div>                          </div>
                         
                       <h1 class="highlight_blue" >Υπερσύνδεσμος (Link)</h1>
-                      <div id="bg_preview"  style=" border-radius: 10px; background-color: rgb(12, 12, 1); margin-left: 10px; margin-right: 10px; padding-bottom: 2px;">
+                      <div  style=" border-radius: 10px; background-color: rgb(12, 12, 1); margin-left: 10px; margin-right: 10px; padding-bottom: 2px;">
                         <div  class="appearance">
                             <div class="space"> 
                                 <div class="buttons1"> </div>
@@ -136,15 +132,14 @@
                             </div>
                             <div class="name_input">Html</div>
                         </div>
-                         <div>
-                            <p class="cmd">
-                                &lt;a href="https://www.example.com"&gt;Κείμενο Υπερσυνδέσμου&lt;/a&gt;;
-                            </p>   
-                        </div>
+                            <div  class="line-numbers">
+                                <pre class="code_editor"><code class="language-html">
+ &lt;a href="https://www.example.com"&gt;Κείμενο Υπερσυνδέσμου&lt;/a&gt;</code></pre>                                
+                            </div>  
                         </div>
 
                         <h1 class="highlight_blue">Λίστα με κουκίδες (Unordered List)</h1>
-                        <div id="bg_preview"  style=" border-radius: 10px; background-color: rgb(12, 12, 1); margin-left: 10px; margin-right: 10px; padding-bottom: 2px;">
+                        <div style=" border-radius: 10px; background-color: rgb(12, 12, 1); margin-left: 10px; margin-right: 10px; padding-bottom: 2px;">
                             <div  class="appearance">
                                 <div class="space"> 
                                     <div class="buttons1"> </div>
@@ -153,33 +148,13 @@
                                 </div>
                                 <div class="name_input">Html</div>
                             </div>
-                             <div>
-                                <p class="cmd">
-                                    &lt;ul&gt; <br>
-                                    &nbsp;&nbsp; &lt;li>Στοιχείο 1&lt;/li&gt;<br>
-                                    &nbsp;&nbsp; &lt;li>Στοιχείο 2&lt;/li&gt;<br>
-                                    &nbsp;&nbsp; &lt;li>Στοιχείο 3&lt;/li&gt;<br>
-                                &lt;/ul&gt;                                </p>   
-                            </div>
-                            </div>
-
-                          <h1 class="highlight_blue">Λίστα με αρίθμηση (Ordered List)</h1>                         
-                          <div id="bg_preview"  style=" border-radius: 10px; background-color: rgb(12, 12, 1); margin-left: 10px; margin-right: 10px; padding-bottom: 2px;">
-                            <div  class="appearance">
-                                <div class="space"> 
-                                    <div class="buttons1"> </div>
-                                    <div class="buttons2"> </div>
-                                    <div class="buttons3"> </div>
-                                </div>
-                                <div class="name_input">Html</div>
-                            </div>
-                             <div>
-                                <p class="cmd">
-                                    &lt;ol&gt; <br>
-                                    &nbsp;&nbsp; &lt;li>Στοιχείο 1&lt;/li&gt;<br>
-                                    &nbsp;&nbsp; &lt;li>Στοιχείο 2&lt;/li&gt;<br>
-                                    &nbsp;&nbsp; &lt;li>Στοιχείο 3&lt;/li&gt;<br>
-                                &lt;/ol&gt;                             </p>   
+                            <div  class="line-numbers">
+                                <pre class="bg"><code class="language-html">
+ &lt;ul&gt;
+    &lt;li>Στοιχείο 1&lt;/li&gt;
+    &lt;li>Στοιχείο 2&lt;/li&gt;
+    &lt;li>Στοιχείο 3&lt;/li&gt;
+ &lt;/ul&gt;</code></pre>                                
                             </div>
                             </div>
 
@@ -189,7 +164,6 @@
             </div> <!--Τέλος Κειμένου-->
 
         </div> <!--Τέλος container-->
-        
         <!-- Footer -->
         <footer>
             <table class="add_footer"></table>
