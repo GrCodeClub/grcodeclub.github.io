@@ -1,4 +1,6 @@
-const selectElement = document.getElementById("code");                
+const selectElement = document.getElementById("code");
+const loadElement = document.getElementById("load");
+
 function update_code() {
     const selectedValue = selectElement.value;
     if (selectedValue=="-") loadElement.innerHTML = '';
