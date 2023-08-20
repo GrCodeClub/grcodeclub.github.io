@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -12,6 +13,10 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/code_bg.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/prism.css" />
+        <script src="https://grcodeclub.github.io/javascript/prism.js"></script>
+    
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
         <title> GrCode Club</title>
     </head>
@@ -65,16 +70,24 @@
 
             <div class="Text"> <!--Αρχή Κειμένου-->
                 <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
-                    <h1 class="title">
-                    <input type="input" class="form__field" placeholder="Αναζήτηση" id='searchInput'/>
-                    </h1>
-                    <div class="list-container">
-                        <ul class="list">
-                            <li><a href="./project/CalculatorApp.html" class="link" target="_blank">CalculatorApp.java</a></li>
-                        </ul>
+                    <h1 class="title">Project</h1>
+                    <select id="code" name="code">
+                        <option value="-">-</option>
+                        <option value="https://grcodeclub.github.io/java-code/Γραφικά/CalculatorApp.java">CalculatorApp.java</option>
+                    </select>
+                    <div class="bg_preview">
+                        <div class="appearance">
+                            <div class="space">
+                                <div class="buttons1"> </div>
+                                <div class="buttons2"> </div>
+                                <div class="buttons3"></div>
+                            </div>
+                            <div id="name"></div>
+                        </div>
+                        <div id="load">  </div>
                     </div>
-                    <script src="https://grcodeclub.github.io/javascript/search_list.js"></script>
-                </div><!-- Τέλος Background Κειμένου-->
+                    <script src="https://grcodeclub.github.io/javascript/preview_code.js"></script>
+            </div><!-- Τέλος Background Κειμένου-->
             </div> <!--Τέλος Κειμένου-->
 
         </div> <!--Τέλος container-->
