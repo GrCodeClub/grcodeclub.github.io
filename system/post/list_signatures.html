@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta property="og:image" content="https://grcodeclub.github.io/file/background/3.png"/>
+    <meta property="og:title" content="Γλώσσα Προγραμματισμού C++">
+    <link rel="stylesheet" href="./markdown.css">
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@12/dist/markdown-it.min.js"></script>
+    <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+    <title> GrCode Club</title>
+</head>
+<body>
+    <h1 style="background-color: blue; color: white; text-align: center;">GrCode Club</h1>
+    <h2 style="text-align: center;">List of File Signatures</h2>
+
+    <div class="markdown-preview">
+        <div class="markdown-preview-content"></div>
+    </div>
+    <script>
+        const markdownPreview = document.querySelector(".markdown-preview-content");
+        const markdownURL = "https://grcodeclub.github.io/system-files/List_of_File_Signatures.md"; // Αντικαταστήστε το με το URL του αρχείου Markdown
+
+        async function fetchMarkdown(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {throw new Error("Network response was not ok"); }
+                return await response.text();
+            } catch (error) {
+                console.error("Error fetching Markdown:", error);
+                return null;
+            }
+        }
+
+        async function loadMarkdown() {
+            const markdownText = await fetchMarkdown(markdownURL);
+            if (markdownText !== null) {
+                const md = window.markdownit({
+                    html: true // Ενεργοποίηση της υποστήριξης HTML tags
+                });
+                markdownPreview.innerHTML = md.render(markdownText);
+                Prism.highlightAll(); // Μορφοποίηση του κώδικα με Prism
+            }
+        }
+
+        loadMarkdown();
+    </script>
+</body>
+</html>
