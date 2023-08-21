@@ -1,9 +1,8 @@
-
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
-        <meta property="og:image" content="https://grcodeclub.github.io/file/background/windows.png"/>
-        <meta property="og:title" content="Windows | Εντολές Δικτύου">
+        <meta property="og:image" content="https://grcodeclub.github.io/file/background/linux.png"/>
+        <meta property="og:title" content="Linux | Eντολές Συστήματος">
         <script src="https://grcodeclub.github.io/javascript/jquery.js"></script>
         <script src="https://grcodeclub.github.io/system/javascript/menu.js"></script>
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
@@ -11,16 +10,17 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
-        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
-        <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/code_bg.css" />
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/prism.css" />
         <script src="https://grcodeclub.github.io/javascript/prism.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
         <title> GrCode Club</title>
     </head>
 
-
+    <body class="system">
     <body class="system">
 
     <div class="container">
@@ -70,68 +70,11 @@
         <div class="Text"> <!--ΑΡΧΗ Text-->
             <a href="../windows.html"><img src="https://grcodeclub.github.io/file/logo_and_graphic/back.png" class="logo_back"></a>
             <div class="text_bg">
-                <h1 class="title">Εντολές Δικτύου</h1>
-                <h3 class="highlight_blue">ipconfig</h3>
-                <p>Εμφανίζει πληροφορίες δικτύου για όλες τις συνδεδεμένες δικτυακές συσκευές.</p>
-                <div class="terminal"><pre class="command-line" data-prompt="c:\users\grcodeclub>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `">
-<code class="language-powershell">ipconfig</code></pre></div>
-                <p> Ανανεώνει την IP διεύθυνση για μια δικτυακή συσκευή από τον DHCP διακομιστή.</p>
-                <div class="terminal"><pre class="command-line" data-prompt="c:\users\grcodeclub>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `">
-<code class="language-powershell">ipconfig /renew</code></pre></div> 
-                <p>Απελευθερώνει την IP διεύθυνση που έχει αντιστοιχιστεί σε μια δικτυακή συσκευή.</p>
-                <div class="terminal"><pre class="command-line" data-prompt="c:\users\grcodeclub>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `">
-<code class="language-powershell">ipconfig /release</code></pre></div> 
-
-                <h3 class="highlight_blue">ping</h3>
-                <p>Στέλνει ένα αίτημα ICMP echo σε έναν προορισμό για να ελέγξει τη συνδεσιμότητα και την απόκριση.</p>
-                <div class="terminal"><pre class="command-line" data-prompt="c:\users\grcodeclub>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `">
-<code class="language-powershell">ping</code></pre></div>
-
-                <h3 class="highlight_blue">tracert</h3>
-                <p>Ανιχνεύει τη διαδρομή που ακολουθεί ένα πακέτο μέσα στο δίκτυο προς έναν προορισμό.</p>
-                <div class="terminal"><pre class="command-line" data-prompt="c:\users\grcodeclub>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `">
-<code class="language-powershell">tracert</code></pre></div>
-
-                <h3 class="highlight_blue">netstat</h3>
-                <p>Εμφανίζει τις στατιστικές πληροφορίες για τις δικτυακές συνδέσεις, τις θύρες και τους πίνακες δρομολόγησης.</p>
-                <div class="terminal"><pre class="command-line" data-prompt="c:\users\grcodeclub>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `">
-<code class="language-powershell">netstat</code></pre></div>
-
-                <h3 class="highlight_blue">nslookup</h3>
-                <p>Εκτελεί αναζήτηση DNS για να αντιστοιχίσει ένα όνομα κεντρικού υπολογιστή σε μια διεύθυνση IP.</p>
-                <div class="terminal"><pre class="command-line" data-prompt="c:\users\grcodeclub>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `">
-<code class="language-powershell">nslookup</code></pre></div>
-
-                <h3 class="highlight_blue">arp</h3>
-                <p>Εμφανίζει και τροποποιεί τον πίνακα ARP (Address Resolution Protocol) που αντιστοιχεί διευθύνσεις IP σε φυσικές διευθύνσεις MAC.</p>
-                <div class="terminal"><pre class="command-line" data-prompt="c:\users\grcodeclub>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `">
-<code class="language-powershell">arp</code></pre></div> 
-
-                <h3 class="highlight_blue">netsh</h3>
-                <p>Εκτελεί εργασίες ρύθμισης δικτύου, όπως ρύθμιση διευθύνσεων IP, θυρών, δρομολογητών κ.λπ.</p>
-                <div class="terminal"><pre class="command-line" data-prompt="c:\users\grcodeclub>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `">
-<code class="language-powershell">netsh</code></pre></div> 
-
-                <h3 class="highlight_blue">route</h3>
-                <p>Εμφανίζει ή τροποποιεί τους πίνακες δρομολόγησης IP.</p>
-                <div class="terminal"><pre class="command-line" data-prompt="c:\users\grcodeclub>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `">
-<code class="language-powershell">route</code></pre></div>
-
-                <h3 class="highlight_blue">troubleshooter</h3>
-                <p>Εκτελεί το εργαλείο επίλυσης προβλημάτων δικτύου των Windows για αυτόματη διάγνωση και επιδιόρθωση προβλημάτων.</p>
-                <div class="terminal"><pre class="command-line" data-prompt="c:\users\grcodeclub>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `">
-<code class="language-powershell">troubleshooter</code></pre></div>
-
-<h3 class="highlight_blue">netstat</h3>
-<p>Εμφανίζει πληροφορίες για τις ενεργές συνδέσεις δικτύου, τις θύρες που είναι ανοιχτές και άλλα στατιστικά δεδομένα.</p>
-<div class="terminal"><pre class="command-line" data-prompt="c:\users\grcodeclub>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `">
-<code class="language-powershell">netstat</code></pre></div>
-
-<p>Εμφανίζει όλες τις ενεργές συνδέσεις δικτύου, συμπεριλαμβανομένων των αριθμών θύρας και των διευθύνσεων IP.</p>
-<div class="terminal"><pre class="command-line" data-prompt="c:\users\grcodeclub>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `">
-<code class="language-powershell">netstat -an</code></pre></div>
-                </div>
-            </div>
+            <h1 class="title">Eντολές Συστήματος</h1>
+            <p></p>
+            <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash"> </code></pre></div>                
+       
+        </div>
         </div> <!--ΤΕΛΟΣ Text-->
 
     </div> <!--ΤΕΛΟΣ container-->
