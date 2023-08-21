@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -17,7 +18,6 @@
         <link rel="stylesheet" href="./css/code.css">
         <link rel="stylesheet" href="./css/image.css">
         <link rel="stylesheet" href="./css/bg.css">
-        <link rel="stylesheet" href="https://grcodeclub.github.io/website/html-css/buttons-css/button-6.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-javascript.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-c.min.js"></script>
@@ -31,6 +31,21 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
       
     </head>
+
+    <style>
+        button{
+            background-color: blue;
+            font-size: 20px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            margin-left: 10px;
+        }
+        button:hover{
+            background-color: white;
+            color: blue;
+        }
+    </style>
     <body class="basic"> 
     
 <div class="container">
@@ -108,7 +123,7 @@
                     <input type="number" id="widthInput" name="widthInput" value="480" min="420" max="5000">
                 </div>
                 <br>
-                <button  class="button-6" id="generateImage">Δημιουργία Εικόνας</button>
+                <button id="generateImage">Δημιουργία Εικόνας</button>
                 <br>
                 <p>Μπορείτε να αλλάξετε το όνομα του αρχείου που εμφανίζετε στην εικόνα, σβήνοντας το παλιό όνομα και πληκτρολογώντας το καινούργιο. </p>
                 <br>
