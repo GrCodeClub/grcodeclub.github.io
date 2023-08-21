@@ -19,7 +19,7 @@ span.header_text {
   background-size: 100% 10px;
   background-repeat: no-repeat;
   background-position: 100% 0%;
-   transition: background-size .7s, background-position .5s ease-in-out;
+  transition: background-size .7s, background-position .5s ease-in-out;
 }
 
 span.header_text:hover {
@@ -33,6 +33,7 @@ h1.header_text{
   text-align: center;
   font-size: 30px;
   color: white;
+  border: none;
 }
 
 
