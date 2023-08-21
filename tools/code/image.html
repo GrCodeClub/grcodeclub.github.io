@@ -1,4 +1,5 @@
 
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -33,6 +34,8 @@
     </head>
 
     <style>
+
+        
         button{
             background-color: blue;
             font-size: 20px;
@@ -93,12 +96,14 @@
     
     
         <div class="Text"> <!--ΑΡΧΗ Text-->
-            <div class="Text_bg">
+            <div class="Text_bg" id="bg">
                   <h1 class="title">Έγχρωμος Κώδικας</h1>
                 <div id="contentToCapture">
-                    <textarea class="transparent" id="codeTextarea" rows="10" cols="50" placeholder="Kώδικας "></textarea>
+                    <textarea id="codeTextarea" class="transparent" rows="10" cols="50" placeholder="Kώδικας " ></textarea>
                 </div>
+
                 <br>
+                <div style="background-color: aqua;" id="1" style="width: 10px;"></div>
                 <div id="bg">
                     <label for="bgColor">Χρώμα Φόντου:</label>
                     <input type="color" id="bgColor" name="bgColor" value="#000000">
@@ -128,19 +133,19 @@
                 <p>Μπορείτε να αλλάξετε το όνομα του αρχείου που εμφανίζετε στην εικόνα, σβήνοντας το παλιό όνομα και πληκτρολογώντας το καινούργιο. </p>
                 <br>
                 <div id="image" style="margin-left:10px; padding-top: 20px; padding-left: 20px; padding-right: 20px;background-image: linear-gradient(140deg, rgb(0, 0, 0), rgb(36, 14, 95));">
-                <div id="bg_preview"  style=" border-radius: 10px; background-color: rgb(12, 12, 1);">
+                <div id="bg_preview"  style=" border-radius: 10px; background-color: rgb(5, 5, 5);">
                 <div  class="appearance">
                     <div class="space"> 
                         <div class="buttons1"> </div>
                         <div class="buttons2"> </div>
                         <div class="buttons3"> </div>
                     </div>
-                    <div class="name_input">
+                    <div class="name_input" style="text-align:left;">
                         <input type="text" class="name" id="name">
                     </div>
                 </div>
                  <div>
-                        <div id="preview" class="preview" style="font-size: 17px; padding-left: 10px;">
+                        <div id="preview" class="preview" style=" font-size: 17px; padding-left: 10px;">
                         </div>
                 </div>
                 </div>
@@ -148,16 +153,12 @@
                     Η εικόνα δημιουργήθηκε στο GrCode Club</h5>
                 </div>
                 <script src="./js/preview.js"> </script>
-                <script src="./js/size_preview.js"> </script>
+
             </div> <!--ΤΕΛΟΣ Text-->
         </div> <!--ΤΕΛΟΣ Text-->
     
     </div> <!--ΤΕΛΟΣ container-->
         
-        <!-- Footer -->
-        <footer>
-            <table class="add_footer"></table>
-            <script src="https://grcodeclub.github.io/javascript/footer.js"></script>       
-        </footer>
+
     </body>
 </html>
