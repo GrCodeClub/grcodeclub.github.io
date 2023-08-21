@@ -1,6 +1,3 @@
-
-
-
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -15,6 +12,8 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/markdown.css">
+        <script src="https://cdn.jsdelivr.net/npm/markdown-it@12/dist/markdown-it.min.js"></script>
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
         <title> GrCode Club</title>
     </head>
@@ -26,11 +25,11 @@
         <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
             <div class="Header"> <!--Αρχή Επικεφαλίδας-->
                 <table>
-                    <tr>
-                        <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
-                        <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
-                        <td><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/system/post/list_of_file_signatures.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
-                    </tr>
+                    <tr style="border: none;">
+                        <td style="border: none;"><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                        <td style="border: none;"><h1 style="border: none;" class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                        <td style="border: none;"><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/system/post/list_of_file_signatures.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
+                    </tr style="border: none;">
                 </table> 
             </div> <!--Τέλος Επικεφαλίδας-->
            
@@ -46,9 +45,9 @@
         <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
             <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
                 <table>
-                    <tr>
-                        <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
-                        <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                    <tr style="border: none;">
+                        <td style="border: none;"><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                        <td style="border: none;"><h1 style="border: none;" class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
                     </tr>
                 </table> 
             </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
@@ -85,7 +84,40 @@
                 <br>
                 Αυτό είναι ιδιαίτερα χρήσιμο όταν θέλετε να διασφαλίσετε ότι ένα πρόγραμμα ή ένα λειτουργικό σύστημα μπορεί να ανοίξει σωστά ένα αρχείο, ανεξάρτητα από την επέκταση που έχει.
               </p>   
-              <a href="https://grcodeclub.github.io/system/post/list_signatures.html" target="_blank" class="link" style="margin-left: 10px;">Δες την λίστα εδώ</a>         
+              
+              <div class="markdown-preview" style="margin-left: 10px; margin-right: 10px;">
+                  <div class="markdown-preview-content"></div>
+              </div>
+              <script>
+                  const markdownPreview = document.querySelector(".markdown-preview-content");
+                  const markdownURL = "https://grcodeclub.github.io/system-files/List_of_File_Signatures.md"; // Αντικαταστήστε το με το URL του αρχείου Markdown
+          
+                  async function fetchMarkdown(url) {
+                      try {
+                          const response = await fetch(url);
+                          if (!response.ok) {throw new Error("Network response was not ok"); }
+                          return await response.text();
+                      } catch (error) {
+                          console.error("Error fetching Markdown:", error);
+                          return null;
+                      }
+                  }
+          
+                  async function loadMarkdown() {
+                      const markdownText = await fetchMarkdown(markdownURL);
+                      if (markdownText !== null) {
+                          const md = window.markdownit({
+                              html: true // Ενεργοποίηση της υποστήριξης HTML tags
+                          });
+                          markdownPreview.innerHTML = md.render(markdownText);
+                          Prism.highlightAll(); // Μορφοποίηση του κώδικα με Prism
+                      }
+                  }
+          
+                  loadMarkdown();
+              </script>
+            
+            
             </div><!-- Τέλος Background Κειμένου-->
         </div> <!--Τέλος Κειμένου-->
 
