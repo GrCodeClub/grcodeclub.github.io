@@ -166,13 +166,12 @@ h6 {
 table {
 	border-collapse: collapse;
 	margin-bottom: 0.7em;
-	border: 1px solid #ccc; /* Προσαρμόστε το πάχος και το χρώμα του border όπως επιθυμείτε */
+
 }
 
 th {
 	text-align: left;
 	border-bottom: 1px solid;
-	border: 1px solid #ccc; /* Προσαρμόστε το πάχος και το χρώμα του border όπως επιθυμείτε */
 }
 
 th,
@@ -180,6 +179,7 @@ td {
 	padding: 5px 10px;
 	color: white;
 	border: 1px solid #ccc; /* Προσαρμόστε το πάχος και το χρώμα του border όπως επιθυμείτε */
+
 }
 
 table.md > tbody > tr.md + tr.md > td.md {
