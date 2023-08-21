@@ -5,7 +5,7 @@ $(document).ready(function() {
     menuLink = ' <li><a href="https://grcodeclub.github.io/tools/convert/tool.html">Μετατροπέας</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = ' <li><a href="https://grcodeclub.github.io/tools/convert/markdown.html">Markdown</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.github.io/tools/markdown.html">Markdown</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     
