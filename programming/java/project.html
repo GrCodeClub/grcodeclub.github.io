@@ -1,4 +1,5 @@
 
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -19,6 +20,20 @@
     
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
         <title> GrCode Club</title>
+
+        <style>
+   /* Προσαρμοσμένο στυλ για το HTML <select> στοιχείο */
+
+
+/* Κανόνες για το dropdown που εμφανίζεται μετά το κλικ */
+select option { 
+    background-color: #000000; /* Χρώμα φόντου των επιλογών */
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+
+        </style>
     </head>
 
      <body class="programming">
@@ -71,10 +86,13 @@
             <div class="Text"> <!--Αρχή Κειμένου-->
                 <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
                     <h1 class="title">Project</h1>
-                    <select id="code" name="code">
-                        <option value="-">-</option>
+                    <label style="margin-left: 10px;">Διάλεξε αρχείο</label>
+                    <select id="code" name="code" style="color: white;border-radius: 10px; background-color: rgba(0, 0, 0, 0.795); border: none;
+                    font-size: 18px; outline: none; cursor: pointer;">
+                        <option value="-"></option>
                         <option value="https://grcodeclub.github.io/java-code/Γραφικά/CalculatorApp.java">CalculatorApp.java</option>
                     </select>
+                    <br><br>
                     <div class="bg_preview">
                         <div class="appearance">
                             <div class="space">
