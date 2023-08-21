@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -10,6 +11,7 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <script src="https://cdn.jsdelivr.net/npm/markdown-it@12/dist/markdown-it.min.js"></script>
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
@@ -17,7 +19,7 @@
     </head>
 
 
-    <body class="system">
+    <body class="system" style="color: white;">
 
     <div class="container">
         <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
@@ -68,7 +70,7 @@
         </section> <!--Τέλος εμφάνιση σε κινητά-->
 
 
-        <div class="Text"> <!--Αρχή Κειμένου-->
+        <div class="Text" > <!--Αρχή Κειμένου-->
             <a href="../post.html"><img src="https://grcodeclub.github.io/file/logo_and_graphic/back.png" class="logo_back"></a>
             <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
                <h1 class="title"> List of File Signatures</h1>
@@ -82,6 +84,41 @@
                 <br>
                 Αυτό είναι ιδιαίτερα χρήσιμο όταν θέλετε να διασφαλίσετε ότι ένα πρόγραμμα ή ένα λειτουργικό σύστημα μπορεί να ανοίξει σωστά ένα αρχείο, ανεξάρτητα από την επέκταση που έχει.
               </p>
+
+              <div class="markdown-preview" >
+                <div class="markdown-preview-content" style="margin-left: 10px;"></div>
+            </div>
+            
+            <script>
+                const markdownPreview = document.querySelector(".markdown-preview-content");
+                const markdownURL = "./red.md"; // Αντικαταστήστε το με το URL του αρχείου Markdown
+        
+                async function fetchMarkdown(url) {
+                    try {
+                        const response = await fetch(url);
+                        if (!response.ok) {
+                            throw new Error("Network response was not ok");
+                        }
+                        return await response.text();
+                    } catch (error) {
+                        console.error("Error fetching Markdown:", error);
+                        return null;
+                    }
+                }
+        
+                async function loadMarkdown() {
+                    const markdownText = await fetchMarkdown(markdownURL);
+                    if (markdownText !== null) {
+                        const md = window.markdownit({
+                            html: true // Ενεργοποίηση της υποστήριξης HTML tags
+                        });
+                        markdownPreview.innerHTML = md.render(markdownText);
+                        Prism.highlightAll(); // Μορφοποίηση του κώδικα με Prism
+                    }
+                }
+        
+                loadMarkdown();
+            </script>
             </div><!-- Τέλος Background Κειμένου-->
         </div> <!--Τέλος Κειμένου-->
 
