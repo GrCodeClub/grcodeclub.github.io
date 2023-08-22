@@ -19,7 +19,7 @@
       .Menu { 
         position: fixed;
         grid-area: Menu; 
-        background-color: rgba(0, 0, 0, 0.950);
+        background-color: rgba(0, 0, 0, 0.89);
         height: 100%;
         margin-top: 90px;
     }
@@ -49,8 +49,10 @@
 }
   
 .Header { 
-    position: fixed;
-    width: 100%;
-    grid-area: Header; 
-   background-color: rgba(0, 0, 0, 0.950);
+  position: fixed;
+  width: 100%;
+  grid-area: Header; 
+  background-color: rgb(0, 0, 0);
+  z-index: 100;
+
 }
