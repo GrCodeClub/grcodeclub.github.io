@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -16,6 +17,21 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markdown-it@12/dist/markdown-it.min.css">
         <script src="https://cdn.jsdelivr.net/npm/markdown-it@12/dist/markdown-it.min.js"></script>
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+    
+        <style>
+         select { 
+             background-color: #000000; /* Χρώμα φόντου των επιλογών */
+             border: none;
+             font-size: 18px;
+             border-radius: 10px;
+             color: rgb(255, 255, 255);
+         }
+
+         option { 
+             background-color: #020202; /* Χρώμα φόντου των επιλογών */
+             color: rgb(255, 255, 255);
+         }
+        </style>
     </head>
     
     
@@ -28,12 +44,12 @@
                         <tr style="border: none;">
                             <td style="border: none;"><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
                             <td style="border: none;"><h1 style="border-bottom: none;" class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
-                            <td style="border: none;"><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/programming/main.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
+                            <td style="border: none;"><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/post/markdown.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
                         </tr>
                     </table> 
             </div> <!--Τέλος Επικεφαλίδας-->
             <div class="Menu"> <!--Αρχή Menu-->
-                <div id="sidebarMenu" style="  overflow: auto;">
+                <div id="sidebarMenu">
                     <ul class="sidebarMenuInner"></ul>
                 </div>
             </div><!--Τέλος Menu-->
@@ -65,13 +81,13 @@
     
     
         <div class="Text" > <!--ΑΡΧΗ Text-->
+            <br><br>
             <div class="Text_bg">
-                
-                <h2 style="text-align: center;">List of File Signatures</h2>
-                <div>
-                    <label for="file-selector">Select a file:</label>
+                <h1 class="title" style="border: none;">Markdown</h1>
+                <div style="margin-left: 10px ;">
+                    <label for="file-selector"></label>
                     <select id="file-selector">
-                        <option value="./red.md">Another File</option>
+                        <option value="-">Select a file</option>
                         <option value="https://grcodeclub.github.io/system-files/List_of_File_Signatures.md">List of File Signatures</option>
                     </select>
                 </div>
@@ -85,26 +101,23 @@
                     const fileSelector = document.getElementById("file-selector");
             
                     async function fetchMarkdown(url) {
-                        try {
                             const response = await fetch(url);
-                            if (!response.ok) {
-                                throw new Error("Network response was not ok");
-                            }
-                            return await response.text();
-                        } catch (error) {
-                            console.error("Error fetching Markdown:", error);
-                            return null;
-                        }
+                            return await response.text();                     
                     }
             
                     async function loadMarkdown() {
                         const selectedURL = fileSelector.value;
                         const markdownText = await fetchMarkdown(selectedURL);
-                        if (markdownText !== null) {
-                            const md = window.markdownit({
+                        if (selectedURL == "-"){
+                            markdownPreview.innerHTML = " ";
+                        }
+                        else{
+                            if (markdownText !== null) {
+                                const md = window.markdownit({
                                 html: true // Enable HTML tags
                             });
                             markdownPreview.innerHTML = md.render(markdownText);
+                        }
                         }
                     }
             
@@ -120,7 +133,7 @@
         <!-- Footer -->
         <footer>
             <table class="add_footer"></table>
-            <script src="https://grcodeclub.github.io/javascript/footer.js"></script>       
+            <script src="https://grcodeclub.github.io/javascript/footer_md.js"></script>       
         </footer>
     </body>
 </html>
