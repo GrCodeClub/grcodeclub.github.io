@@ -17,7 +17,7 @@ caption{
   }
 
   
-/* Style 2 : Έντονη γραμμή (tr) στο πίνακα */
+/* Style 2 */
 
 table.style2 {
 border-spacing: 10px;
@@ -26,11 +26,6 @@ background-color: rgba(0, 0, 0, 0.418);
 border-radius: 20px;
 }
 
-tr.style2{text-align: justify;}
-
 tr.style2:hover {
 background-color: rgb(17, 51, 146);
 color: white;
-font-size: 20px;
-}
-
