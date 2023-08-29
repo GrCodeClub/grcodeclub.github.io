@@ -44,12 +44,11 @@ a.link:hover{
 
 a.link_open {
   padding: 5px 1px 5px 1px;
-  color: rgb(14, 3, 66);
+  color: rgb(0, 0, 0);
   background-color: white;
   min-width: 80px;
   margin: auto;
-  font-size: 20px;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 h2.title{
