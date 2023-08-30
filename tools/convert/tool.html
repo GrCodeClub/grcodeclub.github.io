@@ -1,6 +1,8 @@
 
+
 <html>
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
         <meta property="og:image" content="https://i.ibb.co/Dw600xC/1.png"/>
         <meta property="og:title" content="GRCODE CLUB">
@@ -79,12 +81,9 @@
     
         <div class="Text"> <!--ΑΡΧΗ Text-->
             <div class="Text_bg">
-                <h1 class="title">Μετατροπέας ASCII, Hex, Binary, Decimal, Base64</h1>
+                <h1 class="title">Μετατροπέας Hex, Binary, Decimal</h1>
                 <form name="export">
                            
-                <h4 class="highlight_blue">Κείμενο ASCII</h4> <br>
-                <textarea class="transparent" id="txt" cols="50" placeholder="GrCodeClub" oninput="ASCII()" autofocus></textarea>
-                
                 <h4 class="highlight_blue">Hex (byte)</h4>
                 <textarea class="transparent" id="hex"  cols="50" placeholder="47 72 43 6F 64 65 43 6C 75 62" oninput="Hex()"></textarea>
                 
@@ -96,10 +95,6 @@
                 
                 <h4 class="highlight_blue">Δεκαδικό (byte)</h4> 
                 <textarea class="transparent" id="dec" cols="50" placeholder="71 114 67 111 100 101 67 108 117 98" oninput="Decimal()"></textarea>
-                
-                
-                <h4 class="highlight_blue">Base64</h4>
-                <textarea class="transparent" id="base64"  cols="50" placeholder="R3JDb2RlQ2x1Yg==" oninput="Base64()"></textarea>
                 
                 <h4 class="highlight_blue">Μήκος (byte)</h4>
                 <input class="transparent" type="text" id="len" name="len" placeholder="10" readonly>
