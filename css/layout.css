@@ -20,7 +20,7 @@
       .Menu { 
         position: fixed;
         grid-area: Menu; 
-        background-color: rgba(0, 0, 0, 0.950);
+        background-color: rgb(0, 0, 0);
         height: 100%;
         margin-top: 90px;
         z-index:1;
