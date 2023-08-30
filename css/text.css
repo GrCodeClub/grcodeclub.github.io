@@ -45,6 +45,7 @@ div.text_bg{
   a.link_open {
     padding: 5px 1px 5px 1px;
     background-color: rgb(255, 255, 255);
+    color:black;
     min-width: 80px;
     margin: auto;
     border-radius: 5px;
