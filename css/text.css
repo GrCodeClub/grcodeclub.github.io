@@ -45,10 +45,9 @@ a.link:hover{
 a.link_open {
   padding: 5px 1px 5px 1px;
   color: rgb(0, 0, 0);
-  background-color: white;
   min-width: 80px;
   margin: auto;
-  border-radius: 10px;
+  text-decoration:underline;
 }
 
 a.link_open:hover {
