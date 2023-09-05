@@ -1,0 +1,4 @@
+<Directory "/css">
+    Order allow,deny
+    Deny from all
+</Directory>
