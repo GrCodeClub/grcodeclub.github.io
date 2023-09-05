@@ -11,8 +11,5 @@
       "sizes": "192x192",
       "type": "image/png"
     }
-  ],
-   "serviceworker": {
-    "src": "./sw.js"
-  }
+  ]
 }
