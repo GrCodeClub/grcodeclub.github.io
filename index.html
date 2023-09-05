@@ -15,6 +15,19 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout_not_menu.css">
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <script>
+            self.addEventListener('fetch', (event) => {
+  // Έλεγχος αν η συσκευή είναι κινητή
+  if (event.request && event.request.headers && event.request.headers.get('User-Agent').includes('Mobile')) {
+    // Εμφάνιση του μηνύματος εγκατάστασης
+    event.respondWith(
+      new Response(JSON.stringify({ message: 'Θέλετε να εγκαταστήσετε την εφαρμογή ως PWA;' }), {
+        headers: { 'Content-Type': 'application/json' },
+      })
+    );
+  }
+});
+        </script>
         <title> GrCode Club</title>
     </head>
 
