@@ -15,7 +15,25 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout_not_menu.css">
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
-       
+       <script>
+            // Κώδικας JavaScript εδώ
+            if (/Mobi/.test(navigator.userAgent)) {
+              if (confirm('Θέλετε να εγκαταστήσετε την εφαρμογή ως PWA;')) {
+                if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then(function(registration) {
+      console.log('Ο υπηρεσία εργάτης καταχωρήθηκε με επιτυχία!', registration);
+    })
+    .catch(function(error) {
+      console.error('Σφάλμα καταχώρησης του υπηρεσία εργάτη:', error);
+    });
+}
+
+              } else {
+                alert('Η εφαρμογή δεν εγκαταστάθηκε.');
+              }
+            }
+          </script>
         <title> GrCode Club</title>
     </head>
 
