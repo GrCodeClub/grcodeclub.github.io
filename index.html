@@ -1,11 +1,11 @@
-
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
-        <meta property="og:image" content="https://grcodeclub.github.io/file/background/network.png"/>
-        <meta property="og:title" content="Δίκτυα Υπολογιστών">
+        <meta property="og:image" content="https://grcodeclub.github.io/file/background/4.png"/>
+        <meta property="og:title" content="GrCode Club">
         <script src="https://grcodeclub.github.io/javascript/jquery.js"></script>
         <script src="https://grcodeclub.github.io/menu.js"></script>
+        <link rel="manifest" href="manifest.json">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
-        <link rel="stylesheet" href="https://grcodeclub.github.io/css/card.css">
+        <link rel="stylesheet" href="./cards.css">
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
         <title> GrCode Club</title>
 
@@ -70,6 +70,26 @@
             <div class="Text"> <!--Αρχή Κειμένου-->
                 <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
                     <h1 class="title">Gr Code</h1>
+
+                    <div class="show_mobile" style="text-align: center;">
+                        <button id="myButton"
+                            style="font-size: 25px; background-color: black; color: white; border-radius: 10px;"
+                        >>>Install Mobile App<<</button>
+                    </div>
+                    <script>
+                        // Επιλέγουμε το κουμπί με βάση το ID του
+            var myButton = document.getElementById('myButton');
+            if (window.matchMedia('(display-mode: standalone)').matches) {
+                  // Εμφανίζουμε μήνυμα για την εγκατάσταση 
+                document.getElementById("myButton").style.display = "none";
+            }
+            
+            // Προσθέτουμε έναν ακροατή γεγονότων για το κλικ στο κουμπί
+            myButton.addEventListener('click', function() {
+            alert('Η εφαρμογή μπορεί να προστεθεί στην αρχική σας οθόνη. Επιλέξτε τον browser σας, πατήστε στο μενού δεξιά, και μετά επιλέξτε Add to Home Screen. Θα γίνει αυτόματη εγκατάσταση της εφαρμογής, στη συσκευή σας.');
+            });
+    
+    </script>
 
                     <p>Το GrCode δημιουργήθηκε με σκοπό να παρέχει όλες τις  πληροφορίες αποκλείστηκα στα ελληνικά. Τα θέματα που παρουσιάζονται και αναπτύσσονται στο GrCode Club αφορούν τον προγραμματισμό, δίκτυα και με την κυβερνοασφαλεια.</p>
 
