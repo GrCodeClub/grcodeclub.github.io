@@ -4,9 +4,11 @@ $(document).ready(function() {
     
     menuLink = ' <li><a href="https://grcodeclub.github.io/post/menu.html">Δημοσιεύσεις</a></li>';
     $('.sidebarMenuInner').append(menuLink);
-        
-    menuLink = ' <li><a href="https://grcodeclub.github.io/post/markdown.html">Markdown</a></li>';
+
+    
+    menuLink = ' <li><a href="https://grcodeclub.github.io/post/image/menu.html">Δημοσιεύσεις</a></li>';
     $('.sidebarMenuInner').append(menuLink);
+    
 
   });
   
