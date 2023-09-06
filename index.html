@@ -1,22 +1,27 @@
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
-        <meta property="og:image" content="https://grcodeclub.github.io/file/background/4.png"/>
-        <meta property="og:title" content="GrCode Club">
-        <link rel="manifest" href="manifest.json">
+        <meta property="og:image" content="https://grcodeclub.github.io/file/background/network.png"/>
+        <meta property="og:title" content="Δίκτυα Υπολογιστών">
         <script src="https://grcodeclub.github.io/javascript/jquery.js"></script>
-        <script src="https://grcodeclub.github.io/network/javascript/menu.js"></script>
+        <script src="https://grcodeclub.github.io/menu.js"></script>
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
-        <link rel="stylesheet" href="https://grcodeclub.github.io/css/grcode_menu_main.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
-        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout_not_menu.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/card.css">
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
-
         <title> GrCode Club</title>
+
+        <style>
+            .text_bg{
+    min-width: 400px;
+}
+        </style>
     </head>
 
     <body class="basic">
@@ -26,10 +31,18 @@
                     <table>
                         <tr>
                             <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
-                            <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                            <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
+                            <td><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/network/main.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
                         </tr>
                     </table> 
                 </div> <!--Τέλος Επικεφαλίδας-->
+           
+                <div class="Menu"> <!--Αρχή Menu-->
+                    <div id="sidebarMenu" style="  overflow: auto;">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div><!--Τέλος Menu-->
+
             </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
 
             <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
@@ -37,51 +50,56 @@
                     <table>
                         <tr>
                             <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
-                            <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                            <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
                         </tr>
                     </table> 
-                           </section> <!--Τέλος εμφάνιση σε κινητά-->
+                </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
+                <div>
+                    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                    <label for="openSidebarMenu" class="sidebarIconToggle">
+                        <div class="spinner diagonal part-1"></div>
+                        <div class="spinner horizontal"></div>
+                        <div class="spinner diagonal part-2"></div>
+                    </label>
+                    <div id="sidebarMenu">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div>
+            </section> <!--Τέλος εμφάνιση σε κινητά-->
 
             <div class="Text"> <!--Αρχή Κειμένου-->
-                    <ul class="tabs">
-                        <li><a class="menu" href="https://grcodeclub.github.io/network/">Δίκτυα</a></li>
-                        <li><a class="menu" href="https://grcodeclub.github.io/system/">Λειτουργικό Σύστημα</a></li>
-                        <li><a class="menu" href="https://grcodeclub.github.io/programming/">Προγραμματισμός</a></li>
-                    </ul>
-                    <ul class="tabs1">
-                        <li><a class="menu" href="https://grcodeclub.github.io/cybersecurity/">Κυβερνοασφάλεια</a></li>
-                        <li><a class="menu" href="https://grcodeclub.github.io/tools/convert/tool.html">Εργαλεία</a></li>
-                        <li><a class="menu" href="./post/menu.html">Δημοσιεύσεις</a></li>
-                  </ul>
-                  <hr>
+                <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
+                    <h1 class="title">Gr Code</h1>
 
-                  <ul class="social">
-                      <li><a href="https://github.com/GrCodeClub"><img class="social" src="./file/social/github.png"></a></li>
-                      <li><a href="https://www.facebook.com/grcode.club"><img class="social" src="./file/social/facebook.png"></a></li>
-                      <li><a href="https://www.instagram.com/grcode_club/"><img class="social" src="./file/social/instagram.png"></a></li>
-                      <li><a href="https://www.tiktok.com/@grcode.club"><img class="social" src="./file/social/tiktok.png"></a></li>
-                </ul>  
-                <div class="show_mobile" style="text-align: center;">
-                    <button id="myButton"
-                        style="font-size: 25px; background-color: black; color: white; border-radius: 10px;"
-                    >>>Install Mobile App<<</button>
-                </div>
-                <script>
-                    // Επιλέγουμε το κουμπί με βάση το ID του
-        var myButton = document.getElementById('myButton');
-        if (window.matchMedia('(display-mode: standalone)').matches) {
-              // Εμφανίζουμε μήνυμα για την εγκατάσταση 
-            document.getElementById("myButton").style.display = "none";
-        }
-        
-        // Προσθέτουμε έναν ακροατή γεγονότων για το κλικ στο κουμπί
-        myButton.addEventListener('click', function() {
-        alert('Η εφαρμογή μπορεί να προστεθεί στην αρχική σας οθόνη. Επιλέξτε τον browser σας, πατήστε στο μενού δεξιά, και μετά επιλέξτε Add to Home Screen. Θα γίνει αυτόματη εγκατάσταση της εφαρμογής, στη συσκευή σας.');
-        });
+                    <p>Το GrCode δημιουργήθηκε με σκοπό να παρέχει όλες τις  πληροφορίες αποκλείστηκα στα ελληνικά. Τα θέματα που παρουσιάζονται και αναπτύσσονται στο GrCode Club αφορούν τον προγραμματισμό, δίκτυα και με την κυβερνοασφαλεια.</p>
 
-</script>
+                    <div class="card-container">
+  
+                        <div class="card">
+                            <h2>Προγραμματισμός</h2>
+                            <p>Ο προγραμματισμός επιτρέπει στους προγραμματιστές να δημιουργούν λογισμικό, εφαρμογές, ιστοσελίδες και πολλά άλλα. Οι γλώσσες προγραμματισμού μπορούν να είναι γενικού σκοπού, όπως η Java, η C++ και η Python, ή ειδικού σκοπού, όπως η SQL για τη διαχείριση βάσεων δεδομένων ή η HTML/CSS για τη δημιουργία ιστοσελίδων.</p>
+                            <a href="https://grcodeclub.github.io/programming/">Περισσότερα...</a>
+                        </div>
+
+
+                        <div class="card">
+                            <h2>Λειτουργικό Σύστημα</h2>
+                            <p>ΟΈνα λειτουργικό σύστημα είναι λογισμικό που διαχειρίζεται τους πόρους και τις λειτουργίες ενός υπολογιστικού συστήματος. Το λειτουργικό σύστημα είναι υπεύθυνο για την εκτέλεση και τον συντονισμό των εφαρμογών, τη διαχείριση της μνήμης, τη διαχείριση των αρχείων, τη διαχείριση των συσκευών εισόδου/εξόδου, την ασφάλεια του συστήματος και πολλές άλλες λειτουργίες.</p>
+                            <a href="https://grcodeclub.github.io/system/">Περισσότερα...</a>
+                        </div>
+    
+                    </div>
+
+
+                </div><!-- Τέλος Background Κειμένου-->
             </div> <!--Τέλος Κειμένου-->
 
         </div> <!--Τέλος container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/javascript/footer.js"></script>       
+        </footer>
     </body>
 </html>
