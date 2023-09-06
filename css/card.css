@@ -5,9 +5,13 @@
     align-items: flex-start; /* Ξεκινά από τα πάνω */
     gap: 20px; /* Απόσταση ανάμεσα στις κάρτες */
     margin-left: 15px;
+    align-items: center;
+    justify-content: center; 
+
 }
 
 .card {
+    text-align: center;
     width: 300px;
     background-color: #000000;
     border-radius: 10px;
