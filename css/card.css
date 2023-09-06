@@ -1,0 +1,16 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Επιτρέπει την αναδίπλωση στην επόμενη γραμμή */
+    justify-content: flex-start; /* Ξεκινά από τα αριστερά */
+    align-items: flex-start; /* Ξεκινά από τα πάνω */
+    gap: 20px; /* Απόσταση ανάμεσα στις κάρτες */
+    margin-left: 15px;
+}
+
+.card {
+    width: 300px;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 4px rgb(2, 175, 138);
+}
