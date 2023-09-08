@@ -5,10 +5,13 @@ selectElement.addEventListener("change", function() {
 });
 
 const selectElement1 = document.getElementById("code1");
+if (selectElement1) {
 selectElement1.addEventListener("change", function() {
     update_code(selectElement1.value);
     selectElement.value = "-";
 });
+} 
+
 
 const loadElement = document.getElementById("load");
 
