@@ -12,11 +12,10 @@ $(document).ready(function() {
     menuLink = '<li><a href="https://grcodeclub.github.io/cybersecurity/">Κυβερνοασφάλεια</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    
     menuLink = '<li><a href="https://grcodeclub.github.io/tools/convert/tool.html">Εργαλεία</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = '<li><a href="https://grcodeclub.github.io/post/menu.html">Δημοσιεύσεις</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/post.html">Δημοσιεύσεις</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
     menuLink = '<li style="height: 200px;"></li>';
