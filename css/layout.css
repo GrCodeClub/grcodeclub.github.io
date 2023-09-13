@@ -13,7 +13,7 @@
           color: white;
           margin-top: 10px;
           margin-bottom: 100px;
-          margin-left: 85px;
+          margin-left: 20px;
           margin-right: 20px;
       }    
       .Menu { 
@@ -23,7 +23,7 @@
         height: 100%;
         margin-top: 90px;
         z-index: 100;
-        width: 200px;
+        width: 180px;
 
     }
 }
