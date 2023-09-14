@@ -16,6 +16,15 @@
   background-repeat: no-repeat; /* Αποτρέπει την επανάληψη της εικόνας */
 }
 
+.linux{
+  background-image: url("https://grcodeclub.github.io/file/background/linux.jpg");
+  margin: 0;
+  font-family: "Arial";
+  background-size: cover;
+  background-attachment: fixed; /* Κάνει την εικόνα σταθερή */
+  background-repeat: no-repeat; /* Αποτρέπει την επανάληψη της εικόνας */
+}
+
 .network{
   background-image: url("https://grcodeclub.github.io/file/background/server.jpg");
   margin: 0;
