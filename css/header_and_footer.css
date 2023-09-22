@@ -6,7 +6,7 @@ img.logo{
   height:70px;
 }
 
-h1.header_text {
+span.header_text {
   font-family: 'Bebas Neue', cursive;
   font-size: 50;
   top: 50%;
@@ -18,7 +18,7 @@ h1.header_text {
   background-repeat: no-repeat;
 }
 
-h1.header_text:hover {
+span.header_text:hover {
   background-size: 100% 100%;
   background-position: 0% 100%;
   color: black;
