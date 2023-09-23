@@ -19,3 +19,30 @@
     padding: 20px;
     box-shadow: 0 4px 4px rgb(2, 175, 138);
 }
+
+
+.dropcard {
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.card-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  background-color: #000000;
+  width: 100%;
+
+}
+
+.showCardButton {
+  background-color: #100383;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  text-align: left;
+}
