@@ -12,9 +12,6 @@ $(document).ready(function() {
     menuLink = '<li><a href="https://grcodeclub.github.io/cybersecurity/">Κυβερνοασφάλεια</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = '<li><a href="https://grcodeclub.github.io/android/">Android</a></li>';
-    $('.sidebarMenuInner').append(menuLink);
-
     menuLink = '<li><a href="https://grcodeclub.github.io/tools.html">Εργαλεία</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
