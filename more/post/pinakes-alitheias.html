@@ -1,1 +1,162 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta property="og:image" content="https://i.ibb.co/Dw600xC/1.png"/>
+        <meta property="og:title" content="GRCODE CLUB | Πίνακας Αληθείας">
+        <script src="https://grcodeclub.github.io/javascript/jquery.js"></script>
+        <script src="https://grcodeclub.github.io/more/menu.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/card.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <style>
+            th, td {border: 0.5px solid;}
+        </style>
+    </head>
+    
+    
+    <body class="basic"> 
+    
+<div class="container">
+        <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
+            <div class="Header"> <!--Αρχή Επικεφαλίδας-->
+                    <div class="layout">
+                    <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                    <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                    <div><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/more/post/pinakes-alitheias.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></div>
+                </div> 
+            </div> <!--Τέλος Επικεφαλίδας-->
+       
+            <div class="Menu"> <!--Αρχή Menu-->
+                <div id="sidebarMenu" style="  overflow: auto;">
+                    <ul class="sidebarMenuInner"></ul>
+                </div>
+            </div><!--Τέλος Menu-->
 
+        </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
+
+        <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
+            <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
+                <div class="layout">
+                    <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                    <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                </div> 
+            </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
+            <!--Αρχή Menu σε κινητά-->
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu" style="overflow: auto;">
+                <ul class="sidebarMenuInner"></ul>
+            </div> <!--Τέλος Menu σε κινητά-->
+        </section> <!--Τέλος εμφάνιση σε κινητά-->
+
+    
+    
+        <div class="Text"> <!--ΑΡΧΗ Text-->
+            <div class="Text_bg">
+                <h1 class="title">Πίνακας Αληθείας</h1>
+                <table style="color: white; margin-left: 20px;">
+                        <tr><th>0</th><th>False</th></tr>
+                        <tr><th>1</th><th>True</th></tr>
+
+                     </table>
+                <div class="dropcard"> <button class="showCardButton">➕ NOT</button>
+                <div class="card-content">
+                    <table style="color: white; margin-left: 10px;">
+                        <tr><th>X</th><th>NOT X</th></tr>
+                        <tr><td>0</td><td>1</td></tr>
+                        <tr><td>1</td><td>0</td></tr>
+                     </table>
+                </div></div>
+
+                <div class="dropcard"> <button class="showCardButton">➕ AND</button>
+                <div class="card-content">
+                    <table style="color: white; margin-left: 10px;">
+                        <tr><th>X</th><th>Y</th><th>X AND Y</th></tr>
+                        <tr><td>0</td><td>0</td><td>0</td></tr>
+                        <tr><td>0</td><td>1</td><td>0</td></tr>
+                        <tr><td>1</td><td>0</td><td>0</td></tr>
+                        <tr><td>1</td><td>1</td><td>1</td></tr>
+                     </table>
+                </div></div>
+
+                <div class="dropcard"> <button class="showCardButton">➕ OR</button>
+                <div class="card-content">
+                    <table style="color: white; margin-left: 10px;">
+                        <tr><th>X</th><th>Y</th><th>X OR Y</th></tr>
+                        <tr><td>0</td><td>0</td><td>0</td></tr>
+                        <tr><td>0</td><td>1</td><td>1</td></tr>
+                        <tr><td>1</td><td>0</td><td>1</td></tr>
+                        <tr><td>1</td><td>1</td><td>1</td></tr>
+                     </table>
+                </div></div>
+
+                <div class="dropcard"> <button class="showCardButton">➕ NAND</button>
+                <div class="card-content">
+                    <p>Το αποτέλεσμα είναι αντίθετο της λογικής AND.</p>
+                    <table style="color: white; margin-left: 10px;">
+                        <tr><th>X</th><th>Y</th><th>X NAND Y</th></tr>
+                        <tr><td>0</td><td>0</td><td>1</td></tr>
+                        <tr><td>0</td><td>1</td><td>1</td></tr>
+                        <tr><td>1</td><td>0</td><td>1</td></tr>
+                        <tr><td>1</td><td>1</td><td>0</td></tr>
+                     </table>
+                </div></div>
+
+                <div class="dropcard"> <button class="showCardButton">➕ NOR</button>
+                    <div class="card-content">
+                        <p>Στη λογική NOR, το αποτέλεσμα είναι true (1) μόνο όταν και οι δύο εισόδοι είναι 0(false).</p>
+                        <table style="color: white; margin-left: 10px;">
+                            <tr><th>X</th><th>Y</th><th>X NOR Y</th></tr>
+                            <tr><td>0</td><td>0</td><td>1</td></tr>
+                            <tr><td>0</td><td>1</td><td>0</td></tr>
+                            <tr><td>1</td><td>0</td><td>0</td></tr>
+                            <tr><td>1</td><td>1</td><td>0</td></tr>
+                         </table>
+                    </div></div>
+
+                <div class="dropcard"> <button class="showCardButton">➕ XNOR</button>
+                <div class="card-content">
+                    <p>Στη λογική XNOR, το αποτέλεσμα είναι 1 όταν και οι δύο εισόδοι είναι είτε και οι δύο 1 είτε και οι δύο 0.</p>
+                    <table style="color: white; margin-left: 10px;">
+                        <tr><th>X</th><th>Y</th><th>X XNOR Y</th></tr>
+                        <tr><td>0</td><td>0</td><td>1</td></tr>
+                        <tr><td>0</td><td>1</td><td>0</td></tr>
+                        <tr><td>1</td><td>0</td><td>0</td></tr>
+                        <tr><td>1</td><td>1</td><td>1</td></tr>
+                     </table>
+                </div></div>
+
+                <div class="dropcard"> <button class="showCardButton">➕ XOR (Exclusive OR)</button>
+                    <div class="card-content">
+                        <table style="color: white; margin-left: 10px;">
+                            <tr><th>X</th><th>Y</th><th>X XOR Y</th></tr>
+                            <tr><td>0</td><td>0</td><td>0</td></tr>
+                            <tr><td>0</td><td>1</td><td>1</td></tr>
+                            <tr><td>1</td><td>0</td><td>1</td></tr>
+                            <tr><td>1</td><td>1</td><td>0</td></tr>
+                         </table>
+                    </div></div>
+
+                
+                <script src="https://grcodeclub.github.io/js/dropdown-content.js"></script>
+
+            </div> <!--ΤΕΛΟΣ Text-->
+    
+    </div> <!--ΤΕΛΟΣ container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/javascript/footer.js"></script>       
+        </footer>
+    </body>
+</html>
