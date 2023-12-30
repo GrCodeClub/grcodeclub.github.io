@@ -17,7 +17,7 @@ function update_code(selectedValue) {
 
 
 const selectElement3 = document.getElementById("code3");
-selectElement.addEventListener("change", function() {
+selectElement3.addEventListener("change", function() {
     update_code3(selectElement3.value);
 });
 
