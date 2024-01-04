@@ -7,6 +7,16 @@
   background-repeat: no-repeat; /* Αποτρέπει την επανάληψη της εικόνας */
 }
 
+.edit{
+  background-image: url("https://grcodeclub.github.io/file/background/graphic.jpg");
+  margin: 0;
+  font-family: "Arial";
+  background-size: cover;
+  background-attachment: fixed; /* Κάνει την εικόνα σταθερή */
+  background-repeat: no-repeat; /* Αποτρέπει την επανάληψη της εικόνας */
+}
+
+
 .android{
   background-image: url("https://grcodeclub.github.io/file/background/android.png");
   margin: 0;
