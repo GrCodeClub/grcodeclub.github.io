@@ -14,7 +14,7 @@ $(document).ready(function() {
     menuLink = ' <li><a href="https://grcodeclub.github.io/more/google">Google</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = ' <li><a href="https://grcodeclub.github.io/more/office/menu">Microsoft Office</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.github.io/more/microsoft-Office/index">Microsoft Office</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
     menuLink = '<li><a href="https://grcodeclub.gr/edit">Edit</a></li>';
