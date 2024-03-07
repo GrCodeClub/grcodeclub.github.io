@@ -8,13 +8,13 @@ $(document).ready(function() {
     menuLink = ' <li><a href="https://grcodeclub.github.io/more/orologia">Oρολογία</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = ' <li><a href="https://grcodeclub.github.io/image">Εικόνες</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.github.io/more/image">Εικόνες</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     menuLink = ' <li><a href="https://grcodeclub.github.io/more/google">Google</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = ' <li><a href="https://grcodeclub.github.io/more/microsoft-office/index">Microsoft Office</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.github.io/more/microsoft-office">Microsoft Office</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
   });
