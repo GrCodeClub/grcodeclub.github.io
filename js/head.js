@@ -8,7 +8,8 @@ const cssLinks = [
     "https://grcodeclub.github.io/css/prism.css",
     "https://grcodeclub.github.io/css/list.css",
     "https://grcodeclub.github.io/css/body.css",
-    "https://grcodeclub.gr/css/table.css"
+    "https://grcodeclub.gr/css/table.css",
+    "https://grcodeclub.gr/css/list.css"
 ];
 
 // Αρχικοποίηση head
