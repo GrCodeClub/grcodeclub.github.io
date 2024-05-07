@@ -33,3 +33,7 @@ faviconLink.href = 'https://grcodeclub.github.io/file/logo/black_logo.png';
 
 // Προσθήκη του favicon στο head
 head.appendChild(faviconLink);
+
+// Θέτουμε το title της σελίδας
+document.title = 'GrCode Club';
+
