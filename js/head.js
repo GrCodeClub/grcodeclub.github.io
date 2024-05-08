@@ -33,7 +33,7 @@ cssLinks.forEach(linkUrl => {
 const faviconLink = document.createElement('link');
 faviconLink.rel = 'icon';
 faviconLink.type = 'image/png';
-faviconLink.href = 'https://grcodeclub.github.io/file/logo/black_logo.png';
+faviconLink.href = 'https://grcodeclub.github.io/file/logo/web_logo.png';
 
 // Προσθήκη του favicon στο head
 head.appendChild(faviconLink);
