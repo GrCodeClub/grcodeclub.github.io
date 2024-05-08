@@ -3,7 +3,7 @@ const cssLinks = [
    "https://grcodeclub.gr/website/css/header_and_footer.css",
    "https://grcodeclub.gr/website/css/main.css",
    "https://grcodeclub.gr/website/css/text.css",
-   "https://grcodeclub.gr/website/css/layout_not_menu.css",
+   "https://grcodeclub.gr/website/css/layout-main.css",
    "https://grcodeclub.gr/website/css/code_bg.css",
    "https://grcodeclub.gr/website/css/card.css",
    "https://grcodeclub.gr/website/css/forms.css",
