@@ -64,6 +64,23 @@ function applyTextFile(url) {
         });
 }
 
+// Προσθέστε ακροατή για το κουμπί download
+document.getElementById('downloadButton').addEventListener('click', (event) => {
+    // Αποκτήστε το HTML περιεχόμενο της προεπισκόπησης
+    const iframeDocument = document.getElementById('htmlOutput').contentWindow.document;
+    const previewContent = iframeDocument.documentElement.outerHTML;
+
+    // Δημιουργήστε ένα Blob από το περιεχόμενο της προεπισκόπησης
+    const blob = new Blob([previewContent], { type: 'text/html' });
+
+    // Δημιουργήστε μια διεύθυνση URL για το Blob
+    const url = URL.createObjectURL(blob);
+
+    // Ενημερώστε το href του downloadButton με τη διεύθυνση URL
+    const downloadButton = document.getElementById('downloadButton');
+    downloadButton.href = url;
+});
+
 
 // Αρχική ενημέρωση της προεπισκόπησης με τον προεπιλεγμένο HTML κώδικα
 const htmlOutputDocument = document.getElementById("htmlOutput").contentWindow.document;
