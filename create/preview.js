@@ -4,6 +4,7 @@ const defaultHtml = `<html>
         <meta property="og:image" content="https://i.ibb.co/Dw600xC/1.png"/>
         <meta property="og:title" content="GRCODE CLUB">
         <script src="https://grcodeclub.github.io/js/jquery.js"></script>
+        <script src="https://grcodeclub.github.io/js/prism.js"></script>
         <script src="https://grcodeclub.github.io/more/menu.js"></script>
         <script src="https://grcodeclub.github.io/js/head.js"></script>
     </head>
