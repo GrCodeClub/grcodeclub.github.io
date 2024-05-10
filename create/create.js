@@ -36,16 +36,9 @@ function updatePreview() {
     }
 }
 
- updatePreview();
-// Ακροατής για το textarea για να καλεί την updatePreview() κάθε φορά που αλλάζει το περιεχόμενο
-document.addEventListener('DOMContentLoaded', function () {
-    // Καλέστε το updatePreview() αμέσως μετά τη φόρτωση της σελίδας
-    updatePreview();
-
-    // Προσθέστε ακροατή για το γεγονός input στο textarea για να ενημερώνεται η προεπισκόπηση
-    document.getElementById("htmlInput").addEventListener("input", updatePreview);
-});
-
+updatePreview();
+// Προσθέστε ακροατή για το γεγονός input στο textarea για να ενημερώνεται η προεπισκόπηση
+document.getElementById("htmlInput").addEventListener("input", updatePreview);
 
 // Αρχική ενημέρωση της προεπισκόπησης με τον προεπιλεγμένο HTML κώδικα
 const htmlOutputDocument = document.getElementById("htmlOutput").contentWindow.document;
