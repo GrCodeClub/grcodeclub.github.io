@@ -1,27 +1,37 @@
-<!DOCTYPE html>
 <html>
+    <head>
+        <meta property="og:image" content="https://grcodeclub.gr/file/background/4.png"/>
+        <meta id="grcodeclub" property="og:title" content="GrCode Club">
+        <meta name="description" content="Greek Code Club">
+        <script src="https://grcodeclub.gr/js/jquery.js"></script>
+        <script src="https://grcodeclub.github.io/js/head.js"></script>
+    </head>
 
-<head>
-    <title>Online HTML Preview Tool</title>
-    <link rel="stylesheet" href="./style.css"> <!-- Προσθέστε CSS αρχεία εδώ εάν θέλετε στυλ -->
-    
-</head>
+    <body class="basic">
+        <div class="container">
+                <div id="add_headder_and_menu"></div><script src="https://grcodeclub.gr/js/headder_and_menu.js"></script>
+            
+            <div class="Text"> <!--Αρχή Κειμένου-->
+                <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
+                    
+                    <h1 class="title">Δημιουργία Post</h1>
+                    <a id="downloadButton" href="#" download="preview.html">Κατέβασμα HTML</a>
+                    <div id="container">
+                        <div id="input">
+                            <h2>Εισαγωγή HTML</h2>
+                            <textarea id="htmlInput" placeholder="Γράψτε το HTML σας εδώ..."></textarea>
+                        </div>
+                        <div id="output">
+                            <h2>Προεπισκόπηση</h2>
+                            <iframe id="htmlOutput"></iframe>
+                        </div>
+                    </div>
+                
+                    <script src="./preview.js"></script> <!-- Περιέχει τον JavaScript κώδικα -->
+                </div><!-- Τέλος Background Κειμένου-->
+            </div> <!--Τέλος Κειμένου-->
 
-<body>
-    <h1>Online HTML Preview Tool</h1>
-    <a id="downloadButton" href="#" download="preview.html">Κατέβασμα HTML</a>
-    <div id="container">
-        <div id="input">
-            <h2>Εισαγωγή HTML</h2>
-            <textarea id="htmlInput" placeholder="Γράψτε το HTML σας εδώ..."></textarea>
-        </div>
-        <div id="output">
-            <h2>Προεπισκόπηση</h2>
-            <iframe id="htmlOutput"></iframe>
-        </div>
-    </div>
+        </div> <!--Τέλος container-->
 
-    <script src="./preview.js"></script> <!-- Περιέχει τον JavaScript κώδικα -->
-</body>
-
+    </body>
 </html>
