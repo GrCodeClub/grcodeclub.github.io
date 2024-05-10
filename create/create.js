@@ -36,7 +36,7 @@ function updatePreview() {
     }
 }
 
-
+ updatePreview();
 // Ακροατής για το textarea για να καλεί την updatePreview() κάθε φορά που αλλάζει το περιεχόμενο
 document.addEventListener('DOMContentLoaded', function () {
     // Καλέστε το updatePreview() αμέσως μετά τη φόρτωση της σελίδας
