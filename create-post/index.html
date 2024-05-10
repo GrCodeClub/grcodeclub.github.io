@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online HTML Preview Tool</title>
+    <link rel="stylesheet" href="./style.css"> <!-- Προσθέστε CSS αρχεία εδώ εάν θέλετε στυλ -->
+    
+</head>
+
+<body>
+    <h1>Online HTML Preview Tool</h1>
+    <a id="downloadButton" href="#" download="preview.html">Κατέβασμα HTML</a>
+    <div id="container">
+        <div id="input">
+            <h2>Εισαγωγή HTML</h2>
+            <textarea id="htmlInput" placeholder="Γράψτε το HTML σας εδώ..."></textarea>
+        </div>
+        <div id="output">
+            <h2>Προεπισκόπηση</h2>
+            <iframe id="htmlOutput"></iframe>
+        </div>
+    </div>
+
+    <script src="./preview.js"></script> <!-- Περιέχει τον JavaScript κώδικα -->
+</body>
+
+</html>
