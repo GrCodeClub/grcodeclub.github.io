@@ -38,7 +38,7 @@ function updatePreview() {
 
 // Ενημέρωση της προεπισκόπησης κατά την πληκτρολόγηση
 document.getElementById("htmlInput").addEventListener("input", updatePreview);
- updatePreview();
+
 // Λειτουργία για φόρτωση HTML από ένα αρχείο κειμένου
 function loadText(url) {
     return fetch(url)
@@ -88,3 +88,4 @@ const htmlOutputDocument = document.getElementById("htmlOutput").contentWindow.d
 htmlOutputDocument.open();
 htmlOutputDocument.write(defaultHtml);
 htmlOutputDocument.close();
+updatePreview();
