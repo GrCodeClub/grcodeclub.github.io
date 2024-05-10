@@ -24,20 +24,29 @@ const defaultHtml = `<html>
 function updatePreview() {
     // Πάρτε το περιεχόμενο από το textarea
     const htmlInput = document.getElementById("htmlInput").value;
-    // Βρείτε το iframe και το έγγραφο του
+    // Βρείτε το έγγραφο του iframe
     const htmlOutputDocument = document.getElementById("htmlOutput").contentWindow.document;
 
-    // Βρείτε το στοιχείο με το ID myconect μέσα στο iframe
-    const myconectElement = htmlOutputDocument.getElementById('mycontent');
+    // Βρείτε το στοιχείο με το ID 'mycontent' μέσα στο iframe
+    const mycontentElement = htmlOutputDocument.getElementById('mycontent');
 
-    // Εάν το στοιχείο με το ID myconect υπάρχει, ενημερώστε το με το περιεχόμενο του textarea
-    if (myconectElement) {
-        myconectElement.innerHTML = htmlInput;
+    // Εάν το στοιχείο με το ID 'mycontent' υπάρχει, ενημερώστε το με το περιεχόμενο του textarea
+    if (mycontentElement) {
+        mycontentElement.innerHTML = htmlInput;
     }
 }
 
 // Ενημέρωση της προεπισκόπησης κατά την πληκτρολόγηση
 document.getElementById("htmlInput").addEventListener("input", updatePreview);
+
+// Αρχική ενημέρωση της προεπισκόπησης με τον προεπιλεγμένο HTML κώδικα
+const htmlOutputDocument = document.getElementById("htmlOutput").contentWindow.document;
+htmlOutputDocument.open();
+htmlOutputDocument.write(defaultHtml);
+htmlOutputDocument.close();
+
+// Καλέστε την updatePreview() για ενημέρωση της προεπισκόπησης με το προεπιλεγμένο HTML κείμενο
+updatePreview();
 
 // Λειτουργία για φόρτωση HTML από ένα αρχείο κειμένου
 function loadText(url) {
@@ -81,11 +90,3 @@ document.getElementById('downloadButton').addEventListener('click', (event) => {
     const downloadButton = document.getElementById('downloadButton');
     downloadButton.href = url;
 });
-
-
-// Αρχική ενημέρωση της προεπισκόπησης με τον προεπιλεγμένο HTML κώδικα
-const htmlOutputDocument = document.getElementById("htmlOutput").contentWindow.document;
-htmlOutputDocument.open();
-htmlOutputDocument.write(defaultHtml);
-htmlOutputDocument.close();
-updatePreview();
